@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white;
+  }
+  #__next {
+    @apply min-h-screen;
+  }
+  h1 {
+    @apply text-xl font-medium text-gray-800;
+  }
+  h2 {
+    @apply text-lg font-medium text-gray-800;
+  }
+  h3 {
+    @apply font-medium text-gray-800;
+  }
+  h4 {
+    @apply text-gray-800;
+  }
+  h5 {
+    @apply text-gray-800;
+  }
+  p {
+    @apply text-gray-800;
+  }
+  a {
+    @apply text-gray-800 transition hover:text-gray-900 hover:underline;
+  }
+  svg {
+    @apply text-gray-800;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-2000 {
+    animation-delay: 4s;
+  }
+}
