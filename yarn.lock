@@ -147,6 +147,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@headlessui/react@npm:latest":
+  version: 1.4.1
+  resolution: "@headlessui/react@npm:1.4.1"
+  peerDependencies:
+    react: ^16 || ^17 || ^18
+    react-dom: ^16 || ^17 || ^18
+  checksum: e036941e31b02a17e8c27b018d40cced1e7165ec85ce00cddf74884349e86cb7ef75e3c645d7d0f133f63dfbac97ad4a5765d996db3b8f3cc4a678c84402ad6e
+  languageName: node
+  linkType: hard
+
+"@heroicons/react@npm:latest":
+  version: 1.0.4
+  resolution: "@heroicons/react@npm:1.0.4"
+  peerDependencies:
+    react: ">= 16"
+  checksum: 08f2853a49e51f274f22e8e1bb4e7d8a49456b7eb770447da66fd06ac05bf821ddf5d93170088d61ec44ae66cfbdc877c287861d5a3d22aad1785659502e3a71
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.5.0":
   version: 0.5.0
   resolution: "@humanwhocodes/config-array@npm:0.5.0"
@@ -4678,6 +4697,8 @@ resolve@^2.0.0-next.3:
   version: 0.0.0-use.local
   resolution: "shemmaleriado@workspace:."
   dependencies:
+    "@headlessui/react": latest
+    "@heroicons/react": latest
     "@types/react": 17.0.24
     autoprefixer: latest
     eslint: 7.32.0
