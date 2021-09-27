@@ -12,6 +12,10 @@
   "dependencies": {
     "@headlessui/react": "latest",
     "@heroicons/react": "latest",
+    "@tailwindcss/aspect-ratio": "latest",
+    "@tailwindcss/forms": "latest",
+    "@tailwindcss/line-clamp": "latest",
+    "@tailwindcss/typography": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
