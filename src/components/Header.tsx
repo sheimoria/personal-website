@@ -1,3 +1,4 @@
+import router from 'next/router'
 import Image from 'next/image'
 
 const Header = () => {
@@ -5,7 +6,7 @@ const Header = () => {
     <div className="flex flex-col justify-center max-w-6xl min-h-screen px-6 mx-auto">
       <header className="sticky top-8">
         <nav className="flex justify-between gap-4">
-          <div className="relative w-full h-6">
+          <div className="relative w-full h-6" onClick={() => router.push('/')}>
             <Image
               src="/logo.svg"
               alt="Shem Maleriado"
@@ -15,9 +16,9 @@ const Header = () => {
             />
           </div>
           <div className="flex gap-6">
-            <a href="">Education</a>
-            <a href="">Experience</a>
-            <a href="">Projects</a>
+            <a href="#Education">Education</a>
+            <a href="#Experience">Experience</a>
+            <a href="#Projects">Projects</a>
           </div>
         </nav>
       </header>

@@ -45,6 +45,9 @@ const Home: NextPage = () => {
             stack={['html', 'css', 'js']}
           />
         </Section>
+        <Section heading="Projects">
+          <div>hi</div>
+        </Section>
       </main>
     </>
   )
