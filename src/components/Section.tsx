@@ -7,9 +7,9 @@ type SectionProps = {
 
 const Section = ({ heading, children }: SectionProps) => {
   return (
-    <section id={heading} className="flex flex-col gap-8">
+    <section id={heading} className="flex flex-col gap-6">
       <h2>{heading}</h2>
-      <div className="flex flex-col gap-8 sm:flex-row">{children}</div>
+      <div className="flex flex-col gap-6 sm:flex-row">{children}</div>
     </section>
   )
 }

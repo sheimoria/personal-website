@@ -1,11 +1,11 @@
-import HeaderMenu from './HeaderMenu'
+import HeaderMenu from 'components/HeaderMenu'
 import Image from 'next/image'
 import router from 'next/router'
 
 const Header = () => {
   return (
-    <header className="flex flex-col justify-center max-w-6xl min-h-screen px-6 mx-auto">
-      <nav className="sticky flex justify-between gap-6 top-6">
+    <header>
+      <nav>
         <div className="relative w-full h-6" onClick={() => router.push('/')}>
           <Image
             src="/logo.svg"

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { ReactNode } from 'react'
 
 type EducationArticleProps = {
   logo: string
@@ -6,6 +7,7 @@ type EducationArticleProps = {
   subheading: string
   period: string
   description?: string
+  children?: ReactNode
 }
 
 const EducationArticle = ({
@@ -13,11 +15,12 @@ const EducationArticle = ({
   heading,
   subheading,
   period,
-  description
+  description,
+  children
 }: EducationArticleProps) => {
   return (
-    <article className="flex items-center flex-1 gap-6 p-8 border border-gray-200 rounded-md">
-      <div className="relative w-12 h-full">
+    <article className="flex items-center flex-1 gap-6 p-6 border border-gray-200 rounded-lg shadow">
+      <div className="relative flex-none w-12 h-16">
         <Image
           src={`/${logo}.svg`}
           alt={logo}
@@ -33,6 +36,7 @@ const EducationArticle = ({
           <h5>{period}</h5>
         </div>
         {description && <p>{description}</p>}
+        {children}
       </div>
     </article>
   )

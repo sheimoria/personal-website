@@ -9,14 +9,32 @@
   body {
     @apply bg-white;
   }
+  #__next {
+    @apply mx-auto max-w-7xl p-7;
+  }
+  header {
+    @apply flex flex-col justify-center min-h-screen;
+  }
+  nav {
+    @apply sticky flex justify-between gap-7 top-7;
+  }
+  main {
+    @apply flex flex-col gap-7;
+  }
+  section {
+    @apply flex flex-col gap-7;
+  }
+  article {
+    @apply flex flex-col flex-1 gap-5 border border-gray-200 rounded-lg shadow p-7;
+  }
   h1 {
-    @apply text-xl font-medium text-gray-800;
+    @apply font-medium text-gray-800;
   }
   h2 {
-    @apply text-lg font-medium text-gray-800;
+    @apply font-medium text-gray-800;
   }
   h3 {
-    @apply font-medium text-gray-800;
+    @apply text-gray-800;
   }
   h4 {
     @apply text-gray-800;

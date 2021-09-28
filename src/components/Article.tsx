@@ -18,7 +18,7 @@ const Article = ({
   stack
 }: ArticleProps) => {
   return (
-    <article className="flex flex-col flex-1 gap-6 p-8 border border-gray-200 rounded-md">
+    <article className="flex flex-col flex-1 gap-6 p-6 border border-gray-200 rounded-md">
       <div className="relative w-full h-10">
         <Image
           src={`/${logo}.svg`}
