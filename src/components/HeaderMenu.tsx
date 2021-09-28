@@ -28,21 +28,21 @@ const HeaderMenu = () => {
             >
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="/">
+                  <Link href="#studies">
                     <a className="menu-item">Studies</a>
                   </Link>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="/">
+                  <Link href="#stints">
                     <a className="menu-item">Stints</a>
                   </Link>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="/">
+                  <Link href="#sidejobs">
                     <a className="menu-item">Sidejobs</a>
                   </Link>
                 )}

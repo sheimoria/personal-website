@@ -17,9 +17,9 @@ const Header = () => {
         </div>
         <HeaderMenu />
         <div className="hidden sm:gap-6 sm:flex">
-          <a href="#Education">Education</a>
-          <a href="#Experience">Experience</a>
-          <a href="#Projects">Projects</a>
+          <a href="#studies">Studies</a>
+          <a href="#stints">Stints</a>
+          <a href="#sidejobs">Sidejobs</a>
         </div>
       </nav>
     </header>

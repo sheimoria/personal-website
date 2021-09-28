@@ -11,12 +11,12 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main>
-        <section>
+        <section id="studies">
           <h1>Studies</h1>
           <div className="flex flex-col gap-7 sm:flex-row">
             {studies.map((study) => (
               <article key={study.id}>
-                <div className="flex items-center gap-7">
+                <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
                   <div className="relative flex-none w-12 h-16">
                     <Image
                       src={`/${study.logo}.svg`}
@@ -74,58 +74,50 @@ const Home: NextPage = () => {
             ))}
           </div>
         </section>
+        <section id="stints">
+          <h1>Stints</h1>
+          <div className="flex flex-col gap-7 sm:flex-row">
+            {stints.map((stint) => (
+              <article key={stint.id}>
+                <div className="relative w-full h-8">
+                  <Image
+                    src={`/${stint.logo}.svg`}
+                    alt={stint.logo}
+                    layout="fill"
+                    objectFit="contain"
+                    objectPosition="left"
+                  />
+                </div>
+                <div>
+                  <h2>{stint.title}</h2>
+                  <h3>{stint.period}</h3>
+                </div>
+                <p>{stint.description}</p>
+                {stint.stack && (
+                  <div className="flex flex-wrap gap-6">
+                    {stint.stack.map((tech) => (
+                      <div key={tech.id} className="relative w-6 h-6">
+                        <Image
+                          src={`/${tech.logo}.svg`}
+                          alt={tech.name}
+                          layout="fill"
+                          objectFit="contain"
+                          objectPosition="left"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </article>
+            ))}
+          </div>
+        </section>
       </main>
     </>
   )
 }
 
 export default Home
-
-{
-  /* <main className="flex flex-col max-w-6xl gap-12 p-6 mx-auto">
-        <Section heading="Education">
-          <EducationArticle
-            logo="nus"
-            heading="Bachelor of Computing in Computer Science"
-            subheading="National University of Singapore"
-            period="August 2020 — Present"
-          >
-            <Article heading="Orbital" />
-          </EducationArticle>
-          <EducationArticle
-            logo="sji"
-            heading="International Baccalaureate Diploma"
-            subheading="St. Joseph's Institution"
-            period="Jan 2016 — Nov 2017"
-          />
-        </Section>
-        <Section heading="Experience">
-          <Article
-            logo="carfix"
-            heading="Frontend Developer Intern"
-            period="May 2021 — Present"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Vestibulum lectus mauris ultrices eros in cursus turpis massa.
-              Porta nibh venenatis cras sed felis eget velit aliquet."
-            stack={['nextjs', 'ts']}
-          />
-          <Article
-            logo="grab"
-            heading="Marketing Assistant"
-            period="Jan — Jun 2020"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Vestibulum lectus mauris ultrices eros in cursus turpis massa.
-              Porta nibh venenatis cras sed felis eget velit aliquet."
-            stack={['html', 'css', 'js']}
-          />
-        </Section>
-        <Section heading="Projects">
-          <div>hi</div>
-        </Section>
-      </main> */
-}
 
 const studies = [
   {
@@ -157,5 +149,32 @@ const studies = [
     accreditation: 'International Baccalaureate Diploma',
     period: 'Aug 2020 – Present',
     description: 'Lorem ipsum'
+  }
+]
+
+const stints = [
+  {
+    id: 1,
+    logo: 'carfix',
+    title: 'Frontend Developer Intern',
+    period: 'May 2021 – Present',
+    description:
+      'Developed a web app that allows car owners to compare repair prices and book brick-and-mortar workshops. As the startup’s minimum viable product, it attained funding from a local accelerator. Designed the frontend user interface as well as the backend database structure. Created a design system for branding and marketing.',
+    stack: [
+      { id: 1, logo: 'nextjs', name: 'Next.js' },
+      { id: 2, logo: 'ts', name: 'Typescript' }
+    ]
+  },
+  {
+    id: 2,
+    logo: 'grab',
+    title: 'Marketing Assistant',
+    period: 'Jan 2020 – Jul 2020',
+    description:
+      'Developed interactive landing pages for acquisition and retention campaigns. Designed various graphics for social media and the website. Executed telemarketing initiatives to inform drivers of available COVID-19 aid.',
+    stack: [
+      { id: 1, logo: 'nextjs', name: 'Next.js' },
+      { id: 2, logo: 'ts', name: 'Typescript' }
+    ]
   }
 ]
