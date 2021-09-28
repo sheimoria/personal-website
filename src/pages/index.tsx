@@ -1,8 +1,8 @@
 import Article from 'components/Article'
+import EducationArticle from 'components/EducationArticle'
 import Header from 'components/Header'
 import type { NextPage } from 'next'
 import Section from 'components/Section'
-import EducationArticle from 'components/EducationArticle'
 
 const Home: NextPage = () => {
   return (
