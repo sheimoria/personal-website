@@ -42,8 +42,8 @@ const HeaderMenu = () => {
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#sidejobs">
-                    <a className="menu-item">Sidejobs</a>
+                  <Link href="#sidehustles">
+                    <a className="menu-item">Sidehustles</a>
                   </Link>
                 )}
               </Menu.Item>
