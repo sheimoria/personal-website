@@ -8,8 +8,8 @@ const Intro = () => {
       <h1>Hi there!</h1>
       <p>
         I&apos;m Shem, a computer science sophomore who enjoys making fast and
-        beautiful things on the web. Here are my current favourite technologies
-        to tinker with:
+        beautiful things on the web. Here are some frameworks I am currently
+        having fun tinkering with:
       </p>
       <div className="flex gap-7">
         {tech.map((tech, index) => (
@@ -31,8 +31,8 @@ const Intro = () => {
       <p>
         Besides technology, I also have a knack for design; check out how
         I&apos;ve been exploring these two interests of mine below! But as with
-        everything, there&apos;s so much more to learn and do, so feel free to
-        connect with me if there&apos;s something we can discover together!
+        everything, there&apos;s much to learn and do, so feel free to connect
+        with me if there&apos;s something we can discover together &#128522;
       </p>
       <p>Have a great day!</p>
     </div>
