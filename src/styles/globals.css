@@ -51,6 +51,11 @@
 }
 
 @layer utilities {
+  #stints,
+  #studies,
+  #sidework {
+    scroll-margin-top: 5.25rem;
+  }
   .animation-delay-2000 {
     animation-delay: 2s;
   }
