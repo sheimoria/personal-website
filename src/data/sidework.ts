@@ -40,13 +40,18 @@ const sidework: Sidework[] = [
     period: 'Jan 2021',
     url: 'https://devpost.com/software/lookout-lgzdkx',
     description:
-      'Developed a web app that notified users via Telegram whenever keywords appear during a live lecture.',
+      'Developed a web app that notifies users via Telegram whenever keywords appear during a live lecture.',
     stack: [
       { logo: 'bootstrap', name: 'Bootstrap', url: 'https://getbootstrap.com' },
       {
         logo: 'python',
         name: 'Flask',
         url: 'https://palletsprojects.com/p/flask/'
+      },
+      {
+        logo: 'telegram',
+        name: 'Telegram API',
+        url: 'https://core.telegram.org'
       }
     ]
   },
