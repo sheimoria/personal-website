@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
@@ -11,6 +12,9 @@ module.exports = {
     extend: {
       animation: {
         blob: 'blob 8s infinite'
+      },
+      colors: {
+        gray: colors.gray
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans]
