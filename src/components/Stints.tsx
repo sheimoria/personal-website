@@ -35,7 +35,11 @@ const Stints = () => {
             {stint.stack && (
               <div className="flex flex-wrap gap-6">
                 {stint.stack.map((tech, index) => (
-                  <div key={index} className="relative w-6 h-6">
+                  <div
+                    key={index}
+                    className="relative w-6 h-6 cursor-pointer"
+                    onClick={() => router.push(tech.url)}
+                  >
                     <Image
                       src={`/${tech.logo}.svg`}
                       alt={tech.name}
