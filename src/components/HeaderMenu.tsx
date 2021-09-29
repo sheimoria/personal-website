@@ -29,15 +29,15 @@ const HeaderMenu = () => {
             >
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#studies">
-                    <a className="menu-item">Studies</a>
+                  <Link href="#stints">
+                    <a className="menu-item">Stints</a>
                   </Link>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#stints">
-                    <a className="menu-item">Stints</a>
+                  <Link href="#studies">
+                    <a className="menu-item">Studies</a>
                   </Link>
                 )}
               </Menu.Item>

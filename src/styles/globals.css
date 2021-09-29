@@ -9,17 +9,14 @@
   body {
     @apply bg-white;
   }
-  #__next {
-    @apply mx-auto max-w-7xl p-7;
-  }
   header {
-    @apply flex flex-col justify-center min-h-screen;
+    @apply fixed z-10 w-full bg-white;
   }
   nav {
-    @apply sticky flex items-center justify-between gap-7 top-7;
+    @apply flex items-center justify-between mx-auto max-w-7xl gap-7 p-7;
   }
   main {
-    @apply flex flex-col gap-7;
+    @apply flex flex-col mx-auto gap-7 p-7 max-w-7xl;
   }
   section {
     @apply flex flex-col gap-7;

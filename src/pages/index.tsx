@@ -6,6 +6,7 @@ import router from 'next/router'
 import sidework from 'data/sidework'
 import stints from 'data/stints'
 import studies from 'data/studies'
+import techs from 'data/tech'
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,79 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main>
+        <div className="h-14" />
+        <div className="flex flex-col max-w-3xl gap-5 pb-7">
+          <h1>Hi there!</h1>
+          <p>
+            I&apos;m Shem, a computer science sophomore who enjoys making fast
+            and beautiful things on the web. Here&apos;s my current favourite
+            technologies to tinker with:
+          </p>
+          <div className="flex gap-7">
+            {techs.map((tech, index) => (
+              <div
+                key={index}
+                className="relative w-6 h-6 cursor-pointer"
+                onClick={() => router.push(tech.url)}
+              >
+                <Image
+                  src={`/${tech.logo}.svg`}
+                  alt={tech.name}
+                  layout="fill"
+                  objectFit="contain"
+                  objectPosition="left"
+                />
+              </div>
+            ))}
+          </div>
+          <p>
+            Besides technology, I also have a knack for design; check out how
+            I&apos;ve been exploring these two interests of mine below! But as
+            with everything, there&apos;s so much more to learn and do, so feel
+            free to connect with me if there&apos;s something we can discover
+            together!
+          </p>
+          <p>Have a great day!</p>
+        </div>
+        <section id="stints">
+          <h1>Stints</h1>
+          <div className="flex flex-col gap-7 sm:flex-row">
+            {stints.map((stint, index) => (
+              <article key={index}>
+                <div className="relative w-full h-8">
+                  <Image
+                    src={`/${stint.logo}.svg`}
+                    alt={stint.logo}
+                    layout="fill"
+                    objectFit="contain"
+                    objectPosition="left"
+                  />
+                </div>
+                <div>
+                  <h2>{stint.title}</h2>
+                  <h3>{stint.organisation}</h3>
+                  <h4>{stint.period}</h4>
+                </div>
+                <p>{stint.description}</p>
+                {stint.stack && (
+                  <div className="flex flex-wrap gap-6">
+                    {stint.stack.map((tech, index) => (
+                      <div key={index} className="relative w-6 h-6">
+                        <Image
+                          src={`/${tech.logo}.svg`}
+                          alt={tech.name}
+                          layout="fill"
+                          objectFit="contain"
+                          objectPosition="left"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </article>
+            ))}
+          </div>
+        </section>
         <section id="studies">
           <h1>Studies</h1>
           <div className="flex flex-col gap-7 sm:flex-row">
@@ -85,45 +159,6 @@ const Home: NextPage = () => {
                       </div>
                     ))}
                   </>
-                )}
-              </article>
-            ))}
-          </div>
-        </section>
-        <section id="stints">
-          <h1>Stints</h1>
-          <div className="flex flex-col gap-7 sm:flex-row">
-            {stints.map((stint, index) => (
-              <article key={index}>
-                <div className="relative w-full h-8">
-                  <Image
-                    src={`/${stint.logo}.svg`}
-                    alt={stint.logo}
-                    layout="fill"
-                    objectFit="contain"
-                    objectPosition="left"
-                  />
-                </div>
-                <div>
-                  <h2>{stint.title}</h2>
-                  <h3>{stint.organisation}</h3>
-                  <h4>{stint.period}</h4>
-                </div>
-                <p>{stint.description}</p>
-                {stint.stack && (
-                  <div className="flex flex-wrap gap-6">
-                    {stint.stack.map((tech, index) => (
-                      <div key={index} className="relative w-6 h-6">
-                        <Image
-                          src={`/${tech.logo}.svg`}
-                          alt={tech.name}
-                          layout="fill"
-                          objectFit="contain"
-                          objectPosition="left"
-                        />
-                      </div>
-                    ))}
-                  </div>
                 )}
               </article>
             ))}
