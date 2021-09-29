@@ -61,6 +61,6 @@
     animation-delay: 4s;
   }
   .menu-item {
-    @apply py-4 text-lg text-gray-700 transition-colors cursor-pointer px-7 hover:text-gray-800 hover:bg-gray-100;
+    @apply py-2.5 text-lg text-gray-700 transition-colors cursor-pointer px-7 hover:text-gray-800 hover:bg-gray-100;
   }
 }

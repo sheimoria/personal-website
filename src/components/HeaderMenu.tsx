@@ -25,7 +25,7 @@ const HeaderMenu = () => {
           >
             <Menu.Items
               static
-              className="absolute right-0 z-10 flex flex-col py-3 truncate origin-top-right bg-white border border-gray-200 rounded-md shadow-md focus:outline-none"
+              className="absolute right-0 z-10 flex flex-col py-5 truncate origin-top-right bg-white border border-gray-200 rounded-md shadow-md focus:outline-none"
             >
               <Menu.Item>
                 {({ active }) => (
@@ -48,7 +48,7 @@ const HeaderMenu = () => {
                   </Link>
                 )}
               </Menu.Item>
-              <div className="flex items-center py-4 gap-7 px-7">
+              <div className="flex items-center py-2.5 gap-7 px-7">
                 <span className="sr-only">LinkedIn</span>
                 <svg
                   onClick={() =>
