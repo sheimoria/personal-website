@@ -19,7 +19,7 @@ const Header = () => {
         <div className="hidden sm:gap-6 sm:flex">
           <a href="#studies">Studies</a>
           <a href="#stints">Stints</a>
-          <a href="#sidehustles">Sidehustles</a>
+          <a href="#sidework">Sidework</a>
         </div>
       </nav>
     </header>
