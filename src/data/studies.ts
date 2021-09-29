@@ -12,7 +12,7 @@ const studies: Study[] = [
         code: 'CP2106',
         name: 'Orbital',
         period: 'May 2021 – Aug 2021',
-        url: 'https://www.givehub.vercel.app',
+        url: 'https://givehub.vercel.app',
         description:
           'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers; achieved Artemis (highest) level certification.',
         stack: [

@@ -55,7 +55,7 @@ const sidework: Sidework[] = [
     title: 'Publicity Head',
     organisation: 'Eusoff Hall',
     period: 'May 2021 – Present',
-    url: 'https://www.shemmaleriado.myportfolio.com',
+    url: 'https://shemmaleriado.myportfolio.com',
     description:
       'Leading a team of 12 to design various media and merchandise for the sporting season.',
     stack: [
