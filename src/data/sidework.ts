@@ -1,9 +1,12 @@
-const sidework = [
+import { Sidework } from 'data/dataTypes'
+
+const sidework: Sidework[] = [
   {
     logo: 'better',
     title: 'Race Relations in Singapore',
     organisation: '',
     period: 'May 2020 – Present',
+    url: 'https://racerelationssg.vercel.app',
     description:
       'Initiated a website to showcase a growing spreadsheet of educational resources on Singapore’s race relations, which attracted collaboration with a civic tech collective.',
     stack: [
@@ -25,8 +28,9 @@ const sidework = [
     title: 'Build On Singapore',
     organisation: 'Amazon Web Services',
     period: 'Jul 2020 – Aug 2020',
+    url: 'https://drive.google.com/file/d/15a1b7f8DNrlyfPLNYkHG8JZFKWyD5n89/view?usp=sharing',
     description:
-      'Proposed an app that connects workers affected by COVID-19 to gigs and contract work; emerged as finalists',
+      'Proposed an app that connects workers affected by COVID-19 to gigs and contract work; emerged as finalists.',
     stack: [{ logo: 'figma', name: 'Figma', url: 'https://www.figma.com' }]
   },
   {
@@ -34,8 +38,9 @@ const sidework = [
     title: 'Hack&Roll',
     organisation: 'NUS Hackers',
     period: 'Jan 2021',
+    url: 'https://devpost.com/software/lookout-lgzdkx',
     description:
-      'Developed a web app that notified users via Telegram whenever keywords appear during a live lecture',
+      'Developed a web app that notified users via Telegram whenever keywords appear during a live lecture.',
     stack: [
       { logo: 'bootstrap', name: 'Bootstrap', url: 'https://getbootstrap.com' },
       {
@@ -47,11 +52,12 @@ const sidework = [
   },
   {
     logo: 'eusoff-smc',
-    title: 'Sports Committee Publicity Head',
+    title: 'Publicity Head',
     organisation: 'Eusoff Hall',
     period: 'May 2021 – Present',
+    url: 'https://www.shemmaleriado.myportfolio.com',
     description:
-      'Leading a team of 12 to design various media and merchandise for the sporting season',
+      'Leading a team of 12 to design various media and merchandise for the sporting season.',
     stack: [
       { logo: 'photoshop', name: 'Photoshop', url: '' },
       { logo: 'illustrator', name: 'Illustrator', url: '' }

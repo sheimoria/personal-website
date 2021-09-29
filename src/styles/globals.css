@@ -13,10 +13,10 @@
     @apply fixed z-10 w-full bg-white;
   }
   nav {
-    @apply flex items-center justify-between mx-auto max-w-7xl gap-7 p-7;
+    @apply flex items-center justify-between max-w-6xl mx-auto gap-7 p-7;
   }
   main {
-    @apply flex flex-col mx-auto gap-7 p-7 max-w-7xl;
+    @apply flex flex-col max-w-6xl mx-auto gap-7 p-7;
   }
   section {
     @apply flex flex-col gap-7;

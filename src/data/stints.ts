@@ -1,11 +1,14 @@
-const stints = [
+import { Stint } from 'data/dataTypes'
+
+const stints: Stint[] = [
   {
     logo: 'carfix',
     title: 'Frontend Developer Intern',
     organisation: 'Carfix',
     period: 'May 2021 – Present',
+    url: 'https://staging.carfixsg.co',
     description:
-      'Developed a web app that allows car owners to compare repair prices and book brick-and-mortar workshops. Designed the frontend user interface as well as the backend database structure. Created a design system for branding and marketing.',
+      'Developing a web app that allows car owners to compare repair prices and book brick-and-mortar workshops. Designed the frontend user interface as well as the backend database structure as part of a three-man engineering team. Created a design system for branding and marketing.',
     stack: [
       {
         logo: 'ts',

@@ -1,16 +1,18 @@
-const studies = [
+import { Study } from 'data/dataTypes'
+
+const studies: Study[] = [
   {
     logo: 'nus',
     name: 'National University of Singapore',
     accreditation: 'Bachelor of Computing in Computer Science',
     period: 'Aug 2020 – Present',
-    description: 'Lorem ipsum',
     courses: [
       {
         logo: 'givehub',
         code: 'CP2106',
         name: 'Orbital',
         period: 'May 2021 – Aug 2021',
+        url: 'https://www.givehub.vercel.app',
         description:
           'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers; achieved Artemis (highest) level certification.',
         stack: [
@@ -48,8 +50,7 @@ const studies = [
     logo: 'sji',
     name: "St. Joseph's Institution",
     accreditation: 'International Baccalaureate Diploma',
-    period: 'Aug 2020 – Present',
-    description: 'Lorem ipsum'
+    period: 'Aug 2020 – Present'
   }
 ]
 

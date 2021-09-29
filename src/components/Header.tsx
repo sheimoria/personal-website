@@ -35,9 +35,7 @@ const Header = () => {
           </svg>
           <span className="sr-only">GitHub</span>
           <svg
-            onClick={() =>
-              router.push('https://github.com/sheimoria/race-relations-sg')
-            }
+            onClick={() => router.push('https://github.com/sheimoria')}
             fill="currentColor"
             viewBox="0 0 16 16"
             className="w-5 h-5 text-gray-800 transition-colors cursor-pointer hover:text-gray-900"
