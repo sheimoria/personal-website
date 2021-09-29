@@ -5,7 +5,7 @@ const stints = [
     organisation: 'Carfix',
     period: 'May 2021 – Present',
     description:
-      'Developed a web app that allows car owners to compare repair prices and book brick-and-mortar workshops. As the startup’s minimum viable product, it attained funding from a local accelerator. Designed the frontend user interface as well as the backend database structure. Created a design system for branding and marketing.',
+      'Developed a web app that allows car owners to compare repair prices and book brick-and-mortar workshops. Designed the frontend user interface as well as the backend database structure. Created a design system for branding and marketing.',
     stack: [
       {
         logo: 'ts',
