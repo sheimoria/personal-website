@@ -4,14 +4,14 @@ import tech from 'data/tech'
 
 const Intro = () => {
   return (
-    <div className="flex flex-col gap-5 pb-7">
-      <h1>Hi there!</h1>
+    <div className="flex flex-col gap-6 px-8 sm:px-0">
+      <h1 className="px-0">Hi there!</h1>
       <p>
         I&apos;m Shem, a computer science sophomore who enjoys making fast and
         beautiful things on the web. Here are some of the frameworks that
         I&apos;m currently having fun tinkering with:
       </p>
-      <div className="flex gap-7">
+      <div className="flex gap-8">
         {tech.map((tech, index) => (
           <div
             key={index}

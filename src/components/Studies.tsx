@@ -6,7 +6,7 @@ const Studies = () => {
   return (
     <section id="studies">
       <h1>Studies</h1>
-      <div className="flex flex-col gap-7 sm:flex-row">
+      <div className="flex flex-col gap-8 sm:flex-row">
         {studies.map((study, index) => (
           <article key={index}>
             <div className="relative flex-none w-12 h-12">

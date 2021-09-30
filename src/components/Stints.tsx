@@ -7,10 +7,10 @@ const Stints = () => {
   return (
     <section id="stints">
       <h1>Stints</h1>
-      <div className="flex flex-col gap-7 sm:flex-row">
+      <div className="flex flex-col gap-8 sm:flex-row">
         {stints.map((stint, index) => (
           <article key={index}>
-            <div className="flex items-center justify-between gap-7">
+            <div className="flex items-center justify-between gap-6">
               <div className="relative w-full h-8">
                 <Image
                   src={`/${stint.logo}.svg`}

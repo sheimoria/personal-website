@@ -18,7 +18,7 @@ const Header = () => {
         {/* Mobile */}
         <HeaderMenu />
         {/* Desktop */}
-        <div className="hidden sm:gap-7 sm:items-center sm:flex">
+        <div className="hidden sm:gap-8 sm:items-center sm:flex">
           <a href="#stints">Stints</a>
           <a href="#studies">Studies</a>
           <a href="#sidework">Sidework</a>

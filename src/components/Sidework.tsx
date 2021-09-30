@@ -7,10 +7,10 @@ const Sidework = () => {
   return (
     <section id="sidework">
       <h1>Sidework</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-7">
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
         {sidework.map((sidework, index) => (
           <article key={index}>
-            <div className="flex items-center justify-between gap-7">
+            <div className="flex items-center justify-between gap-6">
               <div className="relative w-full h-8">
                 <Image
                   src={`/${sidework.logo}.svg`}

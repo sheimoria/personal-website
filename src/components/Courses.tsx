@@ -10,16 +10,16 @@ const Courses = ({ courses }: { courses: Course[] }) => {
     <Disclosure as={Fragment} defaultOpen>
       {({ open }) => (
         <>
-          <Disclosure.Button className="flex items-center justify-between px-5 py-2 font-medium text-gray-800 transition-colors bg-gray-100 cursor-pointer gap-7 hover:text-gray-900">
+          <Disclosure.Button className="flex items-center justify-between gap-6 px-4 py-3 font-medium text-gray-800 transition-colors bg-gray-100 rounded shadow cursor-pointer hover:text-gray-900">
             Courses
             <ChevronDownIcon
               className={`${open ? 'transform rotate-180' : ''} w-6 h-6`}
             />
           </Disclosure.Button>
-          <Disclosure.Panel as="div" className="flex flex-col gap-5">
+          <Disclosure.Panel as="div" className="flex flex-col gap-6">
             {courses.map((course, index) => (
-              <div key={index} className="flex flex-col gap-5">
-                <div className="flex items-center justify-between gap-7">
+              <div key={index} className="flex flex-col gap-6">
+                <div className="flex items-center justify-between gap-8">
                   <div className="relative w-full h-8">
                     <Image
                       src={`/${course.logo}.svg`}
