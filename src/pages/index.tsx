@@ -14,7 +14,6 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main>
-        <div className="h-14" />
         <Intro />
         <Stints />
         <Studies />

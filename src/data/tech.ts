@@ -9,11 +9,11 @@ const tech = [
     name: 'Typescript',
     url: 'https://www.typescriptlang.org'
   },
-  { logo: 'nextjs', name: 'Next.js', url: 'https://nextjs.org' },
+  { logo: 'reactjs', name: 'React.js', url: 'https://reactjs.org' },
   {
-    logo: 'tailwindcss',
-    name: 'TailwindCSS',
-    url: 'https://tailwindcss.com'
+    logo: 'nodejs',
+    name: 'Node.js',
+    url: 'http://nodejs.org'
   },
   {
     logo: 'graphql',
