@@ -13,11 +13,11 @@ const Intro = () => {
           for design; check out how I&apos;ve been exploring these two interests
           of mine below! But as with everything, there&apos;s much to learn and
           do, so feel free to connect with me if you&apos;d like us to discover
-          something something together &#128522;
+          something together &#128522;
         </p>
         <p>Have a great day!</p>
       </div>
-      <div className="flex flex-col gap-6 p-8 border border-gray-300 rounded-lg">
+      <div className="flex flex-col gap-6 p-8 border border-gray-200 rounded-lg">
         <h1 className="px-0">Contact me</h1>
         <div className="flex items-center gap-8">
           <svg
