@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <div className="relative w-full h-7" onClick={() => router.push('/')}>
+        <div className="relative w-full h-6" onClick={() => router.push('/')}>
           <Image
             src="/logo.svg"
             alt="Shem Maleriado"
@@ -18,7 +18,7 @@ const Header = () => {
         {/* Mobile */}
         <HeaderMenu />
         {/* Desktop */}
-        <div className="hidden sm:gap-8 sm:items-center sm:flex">
+        <div className="hidden sm:gap-6 sm:items-center sm:flex">
           <a href="#stints">Stints</a>
           <a href="#studies">Studies</a>
           <a href="#sidework">Sidework</a>
