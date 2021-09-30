@@ -24,6 +24,9 @@
   article {
     @apply flex flex-col flex-1 gap-6 p-8 bg-white shadow-lg sm:rounded-lg;
   }
+  footer {
+    @apply flex justify-end max-w-6xl gap-8 p-8 mx-auto;
+  }
   h1 {
     @apply px-8 text-lg font-medium text-gray-800 sm:px-0;
   }

@@ -1,3 +1,4 @@
+import Footer from 'components/Footer'
 import Head from 'next/head'
 import Header from 'components/Header'
 import Intro from 'components/Intro'
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
         <Studies />
         <Sidework />
       </main>
+      <Footer />
     </>
   )
 }
