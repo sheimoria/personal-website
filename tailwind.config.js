@@ -14,10 +14,13 @@ module.exports = {
         blob: 'blob 8s infinite'
       },
       colors: {
-        gray: colors.gray
+        teal: {
+          900: '#193431',
+          100: '#e7f4ba'
+        }
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans]
+        sans: ['neue-haas-unica', ...defaultTheme.fontFamily.sans]
       },
       keyframes: {
         blob: {

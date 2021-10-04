@@ -418,6 +418,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-headroom@npm:latest":
+  version: 2.2.2
+  resolution: "@types/react-headroom@npm:2.2.2"
+  dependencies:
+    "@types/react": "*"
+  checksum: 643f4e9509c6fb9c99431eb3017da875335dccbd6e33c851e26bf294b03356ef8911713d1d2b0ca48347c5dfe7dc950531911c3a2b6e98825d9cbf99172ef73b
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:*":
+  version: 17.0.27
+  resolution: "@types/react@npm:17.0.27"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: 3a1147d963c16dc9bbea5afb20c4be94f2389cf4eca4c5fbe9b02f3406bd9957602c0459ea017c95f8c3d523221f572e8bd842f94654835776d4c2923357f9dc
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:latest":
   version: 17.0.24
   resolution: "@types/react@npm:17.0.24"
@@ -2755,6 +2775,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"intersection-observer@npm:latest":
+  version: 0.12.0
+  resolution: "intersection-observer@npm:0.12.0"
+  checksum: 96d2f3ea4995b7b429b79646467c975230cfbe3ede7fb08d0c022cfe6ee0c89dfa98aa4377e8b5f7bee880322eb118e6c0275607a53043f9c50921da8363c1e8
+  languageName: node
+  linkType: hard
+
 "ip@npm:^1.1.5":
   version: 1.1.5
   resolution: "ip@npm:1.1.5"
@@ -4070,6 +4097,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"performance-now@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "performance-now@npm:2.1.0"
+  checksum: 534e641aa8f7cba160f0afec0599b6cecefbb516a2e837b512be0adbe6c1da5550e89c78059c7fabc5c9ffdf6627edabe23eb7c518c4500067a898fa65c2b550
+  languageName: node
+  linkType: hard
+
 "picomatch@npm:^2.0.4, picomatch@npm:^2.2.1, picomatch@npm:^2.2.3":
   version: 2.3.0
   resolution: "picomatch@npm:2.3.0"
@@ -4262,7 +4296,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2":
+"prop-types@npm:^15.5.8, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -4366,6 +4400,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"raf@npm:^3.3.0":
+  version: 3.4.1
+  resolution: "raf@npm:3.4.1"
+  dependencies:
+    performance-now: ^2.1.0
+  checksum: 50ba284e481c8185dbcf45fc4618ba3aec580bb50c9121385d5698cb6012fe516d2015b1df6dd407a7b7c58d44be8086108236affbce1861edd6b44637c8cd52
+  languageName: node
+  linkType: hard
+
 "randombytes@npm:^2.0.0, randombytes@npm:^2.0.1, randombytes@npm:^2.0.5":
   version: 2.1.0
   resolution: "randombytes@npm:2.1.0"
@@ -4407,6 +4450,29 @@ __metadata:
   peerDependencies:
     react: 17.0.2
   checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
+  languageName: node
+  linkType: hard
+
+"react-headroom@npm:latest":
+  version: 3.1.1
+  resolution: "react-headroom@npm:3.1.1"
+  dependencies:
+    prop-types: ^15.5.8
+    raf: ^3.3.0
+    shallowequal: ^1.1.0
+  peerDependencies:
+    react: ^16.3.0 || ^17
+  checksum: ee6fb52557466b3ffbd83483a6f436153e81f0f9610888e49539263b9187341de05532af692cd9d11ee79545ad95fc53848a91614ea990f066820fcbded8a9f4
+  languageName: node
+  linkType: hard
+
+"react-hook-inview@npm:latest":
+  version: 4.3.11
+  resolution: "react-hook-inview@npm:4.3.11"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 3aafcc8d0e2b54979e378cb0da073e8ab61b76092bac7770945e63b6624563fcea677e9d4b140f96c5d0f590537018364c57788b0d77c75cfb9a12cd2ea59b00
   languageName: node
   linkType: hard
 
@@ -4752,6 +4818,13 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
+"shallowequal@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "shallowequal@npm:1.1.0"
+  checksum: f4c1de0837f106d2dbbfd5d0720a5d059d1c66b42b580965c8f06bb1db684be8783538b684092648c981294bf817869f743a066538771dbecb293df78f765e00
+  languageName: node
+  linkType: hard
+
 "shebang-command@npm:^2.0.0":
   version: 2.0.0
   resolution: "shebang-command@npm:2.0.0"
@@ -4786,14 +4859,18 @@ resolve@^2.0.0-next.3:
     "@tailwindcss/line-clamp": latest
     "@tailwindcss/typography": latest
     "@types/react": latest
+    "@types/react-headroom": latest
     autoprefixer: latest
     eslint: latest
     eslint-config-next: latest
     husky: latest
+    intersection-observer: latest
     next: latest
     postcss: latest
     react: latest
     react-dom: latest
+    react-headroom: latest
+    react-hook-inview: latest
     tailwindcss: latest
     typescript: latest
   languageName: unknown

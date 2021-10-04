@@ -2,8 +2,7 @@ import { Menu, Transition } from '@headlessui/react'
 
 import { Fragment } from 'react'
 import Link from 'next/link'
-import { MenuIcon } from '@heroicons/react/solid'
-import router from 'next/router'
+import { MenuIcon } from '@heroicons/react/outline'
 
 const HeaderMenu = () => {
   return (
@@ -11,7 +10,7 @@ const HeaderMenu = () => {
       {({ open }) => (
         <>
           <Menu.Button>
-            <MenuIcon className="w-6 h-6 text-gray-800 transition-colors hover:text-gray-900" />
+            <MenuIcon className="link-icon" />
           </Menu.Button>
           <Transition
             show={open}
@@ -25,7 +24,7 @@ const HeaderMenu = () => {
           >
             <Menu.Items
               static
-              className="absolute right-0 z-10 flex flex-col py-4 truncate origin-top-right bg-white rounded-lg shadow-lg focus:outline-none"
+              className="absolute right-0 z-10 flex flex-col py-3 truncate origin-top-right bg-teal-900 rounded shadow-md focus:outline-none"
             >
               <Menu.Item>
                 {({ active }) => (
