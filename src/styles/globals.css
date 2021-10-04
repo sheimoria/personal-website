@@ -16,13 +16,13 @@
     @apply flex items-center justify-between gap-6;
   }
   main {
-    @apply flex flex-col max-w-2xl gap-6 p-6 mx-auto;
+    @apply flex flex-col max-w-5xl gap-6 p-6 mx-auto;
   }
   section {
-    @apply flex flex-col gap-6 divide-y divide-white divide-opacity-25;
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2;
   }
   article {
-    @apply flex flex-col flex-1 gap-6 py-6;
+    @apply flex flex-col flex-1 gap-6 p-6 py-6 border border-white border-opacity-25 rounded-md;
   }
   footer {
     @apply flex justify-end gap-6 px-6 pb-6;
@@ -31,10 +31,10 @@
     @apply text-xl font-medium leading-relaxed text-white;
   }
   h2 {
-    @apply font-medium leading-relaxed text-white;
+    @apply leading-relaxed text-teal-100;
   }
   h3 {
-    @apply font-light leading-relaxed text-teal-100;
+    @apply font-medium leading-relaxed text-white;
   }
   h4 {
     @apply font-light leading-relaxed text-white;
@@ -46,10 +46,7 @@
     @apply font-light leading-relaxed text-white;
   }
   a {
-    @apply text-white transition-colors hover:text-gray-900;
-  }
-  svg {
-    @apply text-white;
+    @apply text-white transition-colors hover:text-teal-100;
   }
 }
 
@@ -63,6 +60,6 @@
     @apply px-6 py-3 text-white transition-colors cursor-pointer hover:text-teal-100;
   }
   .link-icon {
-    @apply w-5 h-5 text-white transition-colors cursor-pointer hover:text-teal-100;
+    @apply w-5 h-5 text-teal-100 transition-colors cursor-pointer hover:text-white;
   }
 }

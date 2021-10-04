@@ -11,7 +11,10 @@ const Header = () => {
     <Headroom>
       <header>
         <nav>
-          <div className="relative w-full h-6" onClick={() => router.push('/')}>
+          <div
+            className="relative w-full h-6 cursor-pointer"
+            onClick={() => router.push('/')}
+          >
             <Image
               src="/logo.svg"
               alt="Shem Maleriado"
