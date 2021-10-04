@@ -50,7 +50,7 @@ const studies: Study[] = [
     logo: 'sji',
     name: "St. Joseph's Institution",
     accreditation: 'International Baccalaureate Diploma',
-    period: 'Aug 2020 – Present'
+    period: 'Jan 2016 – Oct 2017'
   }
 ]
 
