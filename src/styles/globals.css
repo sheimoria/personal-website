@@ -10,7 +10,7 @@
     @apply bg-teal-900;
   }
   header {
-    @apply p-6 bg-teal-900 shadow;
+    @apply p-6 bg-teal-900 border-b border-white border-opacity-25;
   }
   nav {
     @apply flex items-center justify-between gap-6;
@@ -25,7 +25,7 @@
     @apply flex flex-col flex-1 gap-6 py-6;
   }
   footer {
-    @apply flex justify-end max-w-6xl gap-8 p-8 mx-auto;
+    @apply flex justify-end gap-6 px-6 pb-6;
   }
   h1 {
     @apply text-xl font-medium leading-relaxed text-white;

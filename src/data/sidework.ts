@@ -2,7 +2,7 @@ import { Sidework } from 'data/dataTypes'
 
 const sidework: Sidework[] = [
   {
-    logo: 'better',
+    logo: 'better-sg',
     title: 'Race Relations in Singapore',
     organisation: '',
     period: 'May 2020 – Present',
