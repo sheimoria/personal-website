@@ -12,7 +12,7 @@ const Courses = ({ courses }: { courses: Course[] }) => {
         <>
           <Disclosure.Button
             as="div"
-            className="flex items-center justify-between gap-6 text-white transition-colors hover:text-teal-100"
+            className="flex items-center justify-between gap-6 font-medium text-teal-100 transition-colors hover:text-white"
           >
             Courses
             <ChevronDownIcon
@@ -22,7 +22,7 @@ const Courses = ({ courses }: { courses: Course[] }) => {
           <Disclosure.Panel as="div" className="flex flex-col gap-6">
             {courses.map((course, index) => (
               <div key={index} className="flex flex-col gap-6">
-                <div className="flex items-center justify-between gap-8">
+                <div className="flex items-center justify-between gap-6">
                   <div className="relative w-full h-8">
                     <Image
                       src={`/${course.logo}.svg`}
@@ -41,7 +41,7 @@ const Courses = ({ courses }: { courses: Course[] }) => {
 
                 <div className="flex flex-col gap-1">
                   <h2 className="flex items-center gap-2">
-                    <span className="px-2 py-1 text-xs tracking-wide text-white bg-gray-800 rounded">
+                    <span className="px-2 py-1 text-xs tracking-wide text-teal-900 bg-teal-100 rounded">
                       {course.code}
                     </span>{' '}
                     {course.name}
