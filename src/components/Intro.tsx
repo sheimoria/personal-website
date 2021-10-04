@@ -1,11 +1,26 @@
-import Image from 'next/image'
+import { Transition } from '@headlessui/react'
 import router from 'next/router'
-import tech from 'data/tech'
+import { useInView } from 'react-hook-inview'
+require('intersection-observer')
 
 const Intro = () => {
+  const [ref, inView] = useInView()
+
   return (
-    <div className="flex flex-col gap-6">
-      <h1 className="px-0">Hi there!</h1>
+    <Transition
+      appear
+      show
+      enter="transition"
+      enterFrom="opacity-0 translate-y-2"
+      enterTo="opacity-100"
+      leave="transition"
+      leaveFrom="opacity-100"
+      leaveTo="opacity-0 translate-y-2"
+      as="div"
+      ref={ref}
+      className="flex flex-col gap-6"
+    >
+      <h1>Hi there!</h1>
       <p>
         I&apos;m Shem, a computer science sophomore who enjoys making fast and
         beautiful things on the web. Besides technology, I also have a knack for
@@ -45,7 +60,7 @@ const Intro = () => {
         </svg>
       </div>
       <p>Have a great day!</p>
-    </div>
+    </Transition>
   )
 }
 

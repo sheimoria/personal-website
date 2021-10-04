@@ -2775,6 +2775,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"intersection-observer@npm:latest":
+  version: 0.12.0
+  resolution: "intersection-observer@npm:0.12.0"
+  checksum: 96d2f3ea4995b7b429b79646467c975230cfbe3ede7fb08d0c022cfe6ee0c89dfa98aa4377e8b5f7bee880322eb118e6c0275607a53043f9c50921da8363c1e8
+  languageName: node
+  linkType: hard
+
 "ip@npm:^1.1.5":
   version: 1.1.5
   resolution: "ip@npm:1.1.5"
@@ -4459,6 +4466,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-hook-inview@npm:latest":
+  version: 4.3.11
+  resolution: "react-hook-inview@npm:4.3.11"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  checksum: 3aafcc8d0e2b54979e378cb0da073e8ab61b76092bac7770945e63b6624563fcea677e9d4b140f96c5d0f590537018364c57788b0d77c75cfb9a12cd2ea59b00
+  languageName: node
+  linkType: hard
+
 "react-is@npm:17.0.2":
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
@@ -4847,11 +4864,13 @@ resolve@^2.0.0-next.3:
     eslint: latest
     eslint-config-next: latest
     husky: latest
+    intersection-observer: latest
     next: latest
     postcss: latest
     react: latest
     react-dom: latest
     react-headroom: latest
+    react-hook-inview: latest
     tailwindcss: latest
     typescript: latest
   languageName: unknown

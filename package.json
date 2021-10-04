@@ -16,10 +16,12 @@
     "@tailwindcss/forms": "latest",
     "@tailwindcss/line-clamp": "latest",
     "@tailwindcss/typography": "latest",
+    "intersection-observer": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-headroom": "latest"
+    "react-headroom": "latest",
+    "react-hook-inview": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",
