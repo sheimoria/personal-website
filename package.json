@@ -23,9 +23,9 @@
     "react-headroom": "latest"
   },
   "devDependencies": {
-    "@types/lodash": "^4",
+    "@types/lodash": "latest",
     "@types/react": "latest",
-    "@types/react-headroom": "^2.2.2",
+    "@types/react-headroom": "latest",
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
