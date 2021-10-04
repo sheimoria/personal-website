@@ -2,8 +2,7 @@ import { Menu, Transition } from '@headlessui/react'
 
 import { Fragment } from 'react'
 import Link from 'next/link'
-import { MenuIcon } from '@heroicons/react/solid'
-import router from 'next/router'
+import { MenuIcon } from '@heroicons/react/outline'
 
 const HeaderMenu = () => {
   return (

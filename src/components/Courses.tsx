@@ -1,5 +1,5 @@
 import { Disclosure } from '@headlessui/react'
-import { ChevronDownIcon, ExternalLinkIcon } from '@heroicons/react/solid'
+import { ChevronDownIcon, ExternalLinkIcon } from '@heroicons/react/outline'
 import { Course } from 'data/dataTypes'
 import { Fragment } from 'react'
 import Image from 'next/image'
@@ -10,10 +10,13 @@ const Courses = ({ courses }: { courses: Course[] }) => {
     <Disclosure as={Fragment} defaultOpen>
       {({ open }) => (
         <>
-          <Disclosure.Button className="flex items-center justify-between gap-6 px-4 py-3 font-medium text-gray-800 transition-colors bg-gray-100 rounded shadow cursor-pointer hover:text-gray-900">
+          <Disclosure.Button
+            as="div"
+            className="flex items-center justify-between gap-6 text-white transition-colors hover:text-teal-100"
+          >
             Courses
             <ChevronDownIcon
-              className={`${open ? 'transform rotate-180' : ''} w-6 h-6`}
+              className={`${open ? 'transform rotate-180' : ''} link-icon`}
             />
           </Disclosure.Button>
           <Disclosure.Panel as="div" className="flex flex-col gap-6">
@@ -31,7 +34,7 @@ const Courses = ({ courses }: { courses: Course[] }) => {
                   </div>
                   {course.url && (
                     <a href={course.url} target="_blank" rel="noreferrer">
-                      <ExternalLinkIcon className="w-6 h-6 text-gray-800 transition-colors cursor-pointer hover:text-gray-900" />
+                      <ExternalLinkIcon className="link-icon" />
                     </a>
                   )}
                 </div>

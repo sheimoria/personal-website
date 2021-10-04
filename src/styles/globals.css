@@ -7,49 +7,49 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-gray-50;
+    @apply bg-teal-900;
   }
   header {
-    @apply sticky top-0 z-10 max-w-6xl p-8 mx-auto my-8 bg-gray-50;
+    @apply p-6 bg-teal-900;
   }
   nav {
     @apply flex items-center justify-between gap-6;
   }
   main {
-    @apply flex flex-col max-w-6xl gap-8 mx-auto sm:px-8;
+    @apply flex flex-col max-w-2xl gap-6 p-6 mx-auto;
   }
   section {
-    @apply flex flex-col gap-8;
+    @apply flex flex-col gap-6 divide-y divide-white divide-opacity-25;
   }
   article {
-    @apply flex flex-col flex-1 gap-6 p-8 bg-white shadow-lg sm:rounded-lg;
+    @apply flex flex-col flex-1 gap-6 py-6;
   }
   footer {
     @apply flex justify-end max-w-6xl gap-8 p-8 mx-auto;
   }
   h1 {
-    @apply px-8 text-lg font-medium text-gray-800 sm:px-0;
+    @apply text-xl font-medium leading-relaxed text-white;
   }
   h2 {
-    @apply font-medium text-gray-800;
+    @apply font-medium leading-relaxed text-white;
   }
   h3 {
-    @apply text-gray-800;
+    @apply font-light leading-relaxed text-teal-100;
   }
   h4 {
-    @apply text-gray-600;
+    @apply font-light leading-relaxed text-white;
   }
   h5 {
-    @apply text-gray-800;
+    @apply font-light leading-relaxed text-white;
   }
   p {
-    @apply text-gray-800;
+    @apply font-light leading-relaxed text-white;
   }
   a {
-    @apply text-gray-800 transition-colors hover:text-gray-900;
+    @apply text-white transition-colors hover:text-gray-900;
   }
   svg {
-    @apply text-gray-800;
+    @apply text-white;
   }
 }
 
@@ -59,13 +59,10 @@
   #sidework {
     scroll-margin-top: 6rem;
   }
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-  .animation-delay-2000 {
-    animation-delay: 4s;
-  }
   .menu-item {
-    @apply px-8 py-4 text-lg text-gray-700 transition-colors cursor-pointer hover:text-gray-800 hover:bg-gray-100;
+    @apply px-8 py-4 text-lg text-gray-700 transition-colors cursor-pointer hover:text-white hover:bg-gray-100;
+  }
+  .link-icon {
+    @apply w-5 h-5 text-white transition-colors cursor-pointer hover:text-teal-100;
   }
 }
