@@ -397,13 +397,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4":
-  version: 4.14.175
-  resolution: "@types/lodash@npm:4.14.175"
-  checksum: 50721f33faa542f1b9f62f2ba769ed353c6036711e92bd89ce569f2ed247e38fb2a2899f6fd46466b1690fea7ae0239471e6a6093c54e8f2b0613e43e8eac19c
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:*":
   version: 16.10.1
   resolution: "@types/node@npm:16.10.1"
@@ -425,7 +418,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-headroom@npm:^2.2.2":
+"@types/react-headroom@npm:latest":
   version: 2.2.2
   resolution: "@types/react-headroom@npm:2.2.2"
   dependencies:
@@ -3260,7 +3253,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.21, lodash@npm:latest":
+"lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -4848,14 +4841,12 @@ resolve@^2.0.0-next.3:
     "@tailwindcss/forms": latest
     "@tailwindcss/line-clamp": latest
     "@tailwindcss/typography": latest
-    "@types/lodash": ^4
     "@types/react": latest
-    "@types/react-headroom": ^2.2.2
+    "@types/react-headroom": latest
     autoprefixer: latest
     eslint: latest
     eslint-config-next: latest
     husky: latest
-    lodash: latest
     next: latest
     postcss: latest
     react: latest

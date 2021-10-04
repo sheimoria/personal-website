@@ -16,14 +16,12 @@
     "@tailwindcss/forms": "latest",
     "@tailwindcss/line-clamp": "latest",
     "@tailwindcss/typography": "latest",
-    "lodash": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-headroom": "latest"
   },
   "devDependencies": {
-    "@types/lodash": "latest",
     "@types/react": "latest",
     "@types/react-headroom": "latest",
     "autoprefixer": "latest",
