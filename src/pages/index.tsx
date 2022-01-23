@@ -6,6 +6,8 @@ import type { NextPage } from 'next'
 import Sidework from 'components/Sidework'
 import Stints from 'components/Stints'
 import Studies from 'components/Studies'
+import Links from 'components/Links'
+import Email from 'components/Email'
 
 const Home: NextPage = () => {
   return (
@@ -14,12 +16,14 @@ const Home: NextPage = () => {
         <title>Shem Maleriado</title>
       </Head>
       <Header />
+      <Links />
       <main>
         <Intro />
         <Stints />
         <Studies />
         <Sidework />
       </main>
+      <Email />
       <Footer />
     </>
   )

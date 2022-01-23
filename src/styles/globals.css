@@ -7,16 +7,10 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-teal-900;
-  }
-  header {
-    @apply p-6 bg-teal-900 border-b border-white border-opacity-25;
-  }
-  nav {
-    @apply flex items-center justify-between gap-6;
+    @apply flex flex-col min-h-screen p-6 bg-white sm:p-12 dark:bg-gray-900;
   }
   main {
-    @apply flex flex-col max-w-5xl gap-6 p-6 mx-auto;
+    @apply flex flex-col max-w-5xl gap-6 px-6 py-12 mx-auto;
   }
   section {
     @apply grid grid-cols-1 gap-6 sm:grid-cols-2;
@@ -28,25 +22,25 @@
     @apply flex justify-end gap-6 px-6 pb-6;
   }
   h1 {
-    @apply text-xl font-medium leading-relaxed text-white;
+    @apply text-4xl font-medium text-gray-700 dark:text-gray-200;
   }
   h2 {
-    @apply leading-relaxed text-teal-100;
+    @apply text-3xl font-medium text-gray-700 dark:text-gray-200;
   }
   h3 {
-    @apply font-medium leading-relaxed text-white;
+    @apply text-2xl font-medium text-gray-700 dark:text-gray-200;
   }
   h4 {
-    @apply font-light leading-relaxed text-white;
+    @apply text-xl font-medium text-gray-700 dark:text-gray-200;
   }
   h5 {
-    @apply font-light leading-relaxed text-white;
+    @apply text-lg font-medium text-gray-700 dark:text-gray-200;
+  }
+  h6 {
+    @apply font-medium text-gray-700 dark:text-gray-200;
   }
   p {
-    @apply font-light leading-relaxed text-white;
-  }
-  a {
-    @apply text-white transition-colors hover:text-teal-100;
+    @apply text-gray-700 dark:text-gray-200;
   }
 }
 
@@ -57,9 +51,9 @@
     scroll-margin-top: 3rem;
   }
   .menu-item {
-    @apply px-6 py-3 text-white transition-colors cursor-pointer hover:text-teal-100;
+    @apply px-6 py-3 text-gray-700 transition-colors cursor-pointer hover:text-gray-100;
   }
   .link-icon {
-    @apply w-5 h-5 text-teal-100 transition-colors cursor-pointer hover:text-white;
+    @apply w-5 h-5 text-gray-100 transition-colors cursor-pointer hover:text-gray-700;
   }
 }
