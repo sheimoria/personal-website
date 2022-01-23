@@ -1,6 +1,6 @@
 export type Tech = { logo: string; name: string; url: string }
 
-export type Stint = {
+export type WorkExperience = {
   logo: string
   title: string
   organisation: string
@@ -10,7 +10,7 @@ export type Stint = {
   stack: Tech[]
 }
 
-export type Study = {
+export type Degree = {
   logo: string
   name: string
   accreditation: string
@@ -28,7 +28,7 @@ export type Course = {
   stack: Tech[]
 }
 
-export type Sidework = {
+export type Project = {
   logo: string
   title: string
   organisation: string

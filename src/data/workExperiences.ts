@@ -1,6 +1,6 @@
-import { Stint } from 'data/dataTypes'
+import { WorkExperience } from 'data/dataTypes'
 
-const stints: Stint[] = [
+export const workExperiences: WorkExperience[] = [
   {
     logo: 'carfix',
     title: 'Frontend Developer Intern',
@@ -60,5 +60,3 @@ const stints: Stint[] = [
     ]
   }
 ]
-
-export default stints

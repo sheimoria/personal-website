@@ -16,9 +16,12 @@
     "@tailwindcss/forms": "latest",
     "@tailwindcss/line-clamp": "latest",
     "@tailwindcss/typography": "latest",
+    "external-svg-loader": "^1.4.0",
     "intersection-observer": "latest",
     "next": "latest",
+    "next-themes": "latest",
     "react": "latest",
+    "react-awesome-reveal": "latest",
     "react-dom": "latest",
     "react-headroom": "latest",
     "react-hook-inview": "latest"
