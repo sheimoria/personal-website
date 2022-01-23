@@ -1,8 +1,6 @@
-import { Fade } from 'react-awesome-reveal'
-
 const Email = () => {
   return (
-    <aside className="fixed flex items-center gap-8 -right-16 bottom-40">
+    <aside className="fixed items-center hidden gap-8 sm:flex -right-16 bottom-40">
       <a
         href="mailto: shem.maleriado@gmail.com"
         target="_blank"

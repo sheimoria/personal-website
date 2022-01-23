@@ -1,6 +1,6 @@
-import { Sidework } from 'data/dataTypes'
+import { Project } from 'data/dataTypes'
 
-const sidework: Sidework[] = [
+export const projects: Project[] = [
   {
     logo: 'better-sg',
     title: 'Race Relations in Singapore',
@@ -98,5 +98,3 @@ const sidework: Sidework[] = [
     stack: []
   }
 ]
-
-export default sidework

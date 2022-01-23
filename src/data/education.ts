@@ -1,6 +1,6 @@
-import { Study } from 'data/dataTypes'
+import { Degree } from 'data/dataTypes'
 
-const studies: Study[] = [
+export const education: Degree[] = [
   {
     logo: 'nus',
     name: 'National University of Singapore',
@@ -53,5 +53,3 @@ const studies: Study[] = [
     period: 'Jan 2016 – Oct 2017'
   }
 ]
-
-export default studies

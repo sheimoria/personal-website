@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal'
 
 const Links = () => {
   return (
-    <aside className="fixed flex flex-col gap-8 left-12 bottom-12">
+    <aside className="fixed flex-col hidden gap-8 sm:flex left-12 bottom-12">
       <Fade cascade direction="up" duration={500} triggerOnce>
         <MailIcon
           onClick={() => router.push('mailto: shem.maleriado@gmail.com')}

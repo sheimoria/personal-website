@@ -3,11 +3,11 @@ import Head from 'next/head'
 import Header from 'components/Header'
 import Intro from 'components/Intro'
 import type { NextPage } from 'next'
-import Sidework from 'components/Sidework'
-import Stints from 'components/Stints'
-import Studies from 'components/Studies'
 import Links from 'components/Links'
 import Email from 'components/Email'
+import WorkExperience from 'components/WorkExperience'
+import Education from 'components/Education'
+import Projects from 'components/Projects'
 
 const Home: NextPage = () => {
   return (
@@ -16,13 +16,13 @@ const Home: NextPage = () => {
         <title>Shem Maleriado</title>
       </Head>
       <Header />
-      <Links />
       <main>
         <Intro />
-        <Stints />
-        <Studies />
-        <Sidework />
+        <Education />
+        <WorkExperience />
+        <Projects />
       </main>
+      <Links />
       <Email />
       <Footer />
     </>
