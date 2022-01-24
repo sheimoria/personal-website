@@ -10,11 +10,11 @@ export const education: Degree[] = [
       {
         logo: 'givehub',
         code: 'CP2106',
-        name: 'Orbital',
-        period: 'May 2021 – Aug 2021',
+        name: 'Independent Software Development Project (Orbital)',
+        period: 'May – Aug 2021',
         url: 'https://givehub.vercel.app',
         description:
-          'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers; achieved Artemis (highest) level certification.',
+          'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers; achieved highest level certification (Artemis).',
         stack: [
           {
             logo: 'ts',
@@ -43,6 +43,15 @@ export const education: Degree[] = [
             url: 'https://www.postgresql.org'
           }
         ]
+      },
+      {
+        logo: 'nus',
+        code: 'TR3301',
+        name: 'Summer Programme in Entrepreneurship',
+        period: 'July 2021',
+        url: 'https://enterprise.nus.edu.sg/education-programmes/summer-programme/',
+        description:
+          'Student ambassador for 12 students from Southeast Asia and China; collaborated with a team of 5 to deliver a product pitch to judges.'
       }
     ]
   },

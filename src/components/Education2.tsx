@@ -20,7 +20,7 @@ const Education = () => {
               className={({ selected }) =>
                 ` ${
                   selected ? ' bg-gray-100 rounded dark:bg-gray-800' : '  '
-                } w-36 flex truncate text-gray-700 font-medium dark:text-gray-200 px-6 py-3 hover:text-gray-800 dark:hover:text-gray-100 transition`
+                } w-36 flex truncate text-gray-800 font-medium dark:text-gray-200 px-6 py-3 hover:text-gray-900 dark:hover:text-gray-100 transition`
               }
             >
               {degree.accreditation}

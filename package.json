@@ -16,7 +16,6 @@
     "@tailwindcss/forms": "latest",
     "@tailwindcss/line-clamp": "latest",
     "@tailwindcss/typography": "latest",
-    "external-svg-loader": "^1.4.0",
     "intersection-observer": "latest",
     "next": "latest",
     "next-themes": "latest",

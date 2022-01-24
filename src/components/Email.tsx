@@ -5,7 +5,7 @@ const Email = () => {
         href="mailto: shem.maleriado@gmail.com"
         target="_blank"
         rel="noreferrer"
-        className="font-mono tracking-wide text-gray-700 transition-colors transform rotate-90 dark:text-gray-200 hover:text-gray-800 dark:hover:text-gray-100"
+        className="font-mono tracking-wide text-gray-800 transition-colors transform rotate-90 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100"
       >
         shem.maleriado@gmail.com
       </a>

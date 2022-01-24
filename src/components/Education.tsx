@@ -1,4 +1,3 @@
-import { Tab } from '@headlessui/react'
 import { education } from 'data/education'
 import Image from 'next/image'
 import { Fade } from 'react-awesome-reveal'
@@ -8,27 +7,29 @@ const Education = () => {
   const degree = education[0]
 
   return (
-    <Fade cascade duration={500} triggerOnce>
-      <h4 id="about-me">Education</h4>
-      <article className="flex flex-col gap-6 p-8 border border-gray-200 rounded dark:border-gray-700">
-        <div className="relative flex-none w-12 h-12">
-          <Image
-            src={`/${degree.logo}.svg`}
-            alt={degree.logo}
-            layout="fill"
-            objectFit="contain"
-            objectPosition="left"
-            className="filter-gray dark:filter-white"
-          />
+    <section className="flex flex-col justify-center min-h-screen gap-8 py-8 snap-always snap-center sm:py-12">
+      <Fade cascade duration={500}>
+        <h3 id="about-me">Education</h3>
+        <div className="flex flex-col gap-8 ">
+          <div className="relative flex-none w-12 h-12">
+            <Image
+              src={`/${degree.logo}.svg`}
+              alt={degree.logo}
+              layout="fill"
+              objectFit="contain"
+              objectPosition="left"
+              className="filter-gray dark:filter-white"
+            />
+          </div>
+          <div>
+            <h4>{degree.name}</h4>
+            <h5>{degree.accreditation}</h5>
+            <h6>{degree.period}</h6>
+          </div>
+          {degree.courses && <Courses courses={degree.courses} />}
         </div>
-        <div>
-          <h5>{degree.name}</h5>
-          <h6>{degree.accreditation}</h6>
-          <p>{degree.period}</p>
-        </div>
-        {degree.courses && <Courses courses={degree.courses} />}
-      </article>
-    </Fade>
+      </Fade>
+    </section>
   )
 }
 

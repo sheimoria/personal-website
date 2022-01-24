@@ -7,8 +7,11 @@ export const workExperiences: WorkExperience[] = [
     organisation: 'Carfix',
     period: 'May 2021 – Present',
     url: 'https://staging.carfixsg.co',
-    description:
-      'Developing a web app that allows car owners to compare repair prices and book brick-and-mortar workshops. Designed the frontend user interface as well as the backend database structure as part of a three-man engineering team. Created a design system for branding and marketing.',
+    description: [
+      'Created the web platform in collaboration with two other developers; tripled revenue since launch and secured government funding of SGD 50,000',
+      'Developed the frontend and its user interface from scratch; served over 100 requests since launch',
+      'Designed the company logo and design system for marketing'
+    ],
     stack: [
       {
         logo: 'ts',
@@ -37,9 +40,12 @@ export const workExperiences: WorkExperience[] = [
     logo: 'grab',
     title: 'Marketing Assistant',
     organisation: 'Grab',
-    period: 'Jan 2020 – Jul 2020',
-    description:
-      'Developed interactive landing pages for acquisition and retention campaigns. Designed various graphics for social media and the website. Executed telemarketing initiatives to inform drivers of available COVID-19 aid.',
+    period: 'Jan – Jul 2020',
+    description: [
+      'Programmed interactive landing pages for acquisition campaigns as a member of the marketing team',
+      'Designed marketing collaterals such as brochures and electronic direct mail; sent to over 1000 driver-partners',
+      'Produced creative, promotional content for social media channels; increased incoming customer enquiries by over 3 times'
+    ],
     stack: [
       {
         logo: 'html',

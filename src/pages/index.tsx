@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <title>Shem Maleriado</title>
       </Head>
       <Header />
-      <main>
+      <main className="max-w-xl max-h-screen mx-auto lg:max-w-3xl snap-y snap-mandatory">
         <Intro />
         <Education />
         <WorkExperience />

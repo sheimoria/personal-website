@@ -27,7 +27,7 @@ export const projects: Project[] = [
     logo: 'aws',
     title: 'Build On Singapore',
     organisation: 'Amazon Web Services',
-    period: 'Jul 2020 – Aug 2020',
+    period: 'Jul – Aug 2020',
     url: 'https://drive.google.com/file/d/15a1b7f8DNrlyfPLNYkHG8JZFKWyD5n89/view?usp=sharing',
     description:
       'Proposed an app that connects workers affected by COVID-19 to gigs and contract work; emerged as finalists.',
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     logo: 'imda',
     title: 'Digital Clinics for the Merdeka Generation',
     organisation: 'Infocomm and Media Development Authority',
-    period: 'Feb 2020 – Apr 2020',
+    period: 'Feb – Apr 2020',
     description:
       'Led workshops to teach senior citizens how to use the Grab app for their daily needs.',
     stack: []

@@ -6,7 +6,7 @@ export type WorkExperience = {
   organisation: string
   period: string
   url?: string
-  description: string
+  description: string[]
   stack: Tech[]
 }
 
@@ -25,7 +25,7 @@ export type Course = {
   period: string
   url?: string
   description: string
-  stack: Tech[]
+  stack?: Tech[]
 }
 
 export type Project = {
