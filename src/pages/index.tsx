@@ -5,7 +5,7 @@ import Intro from 'components/Intro'
 import type { NextPage } from 'next'
 import Links from 'components/Links'
 import Email from 'components/Email'
-import WorkExperience from 'components/WorkExperience'
+import Experience from 'components/Experience'
 import Education from 'components/Education'
 import Projects from 'components/Projects'
 
@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <main className="max-w-xl max-h-screen mx-auto lg:max-w-3xl snap-y snap-mandatory">
         <Intro />
         <Education />
-        <WorkExperience />
+        <Experience />
         <Projects />
       </main>
       <Links />

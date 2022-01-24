@@ -4,9 +4,9 @@ import { Fade } from 'react-awesome-reveal'
 const Intro = () => {
   return (
     <section className="flex flex-col-reverse items-center justify-center min-h-screen gap-8 sm:flex-row snap-always snap-center">
-      <Fade duration={500}>
+      <Fade duration={800}>
         <div className="flex flex-col gap-8">
-          <h3>Hi there!</h3>
+          <h4>Hi there!</h4>
           <p>
             I&apos;m Shem, a computer science sophomore who enjoys making fast
             and beautiful things on the web. Besides technology, I also have a

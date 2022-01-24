@@ -1,6 +1,6 @@
-import { WorkExperience } from 'data/dataTypes'
+import { Experience } from 'data/dataTypes'
 
-export const workExperiences: WorkExperience[] = [
+const experience: Experience[] = [
   {
     logo: 'carfix',
     title: 'Frontend Developer Intern',
@@ -14,7 +14,7 @@ export const workExperiences: WorkExperience[] = [
     ],
     stack: [
       {
-        logo: 'ts',
+        logo: 'typescript',
         name: 'Typescript',
         url: 'https://www.typescriptlang.org'
       },
@@ -48,21 +48,23 @@ export const workExperiences: WorkExperience[] = [
     ],
     stack: [
       {
-        logo: 'html',
+        logo: 'html5',
         name: 'HTML5',
         url: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
       },
       {
-        logo: 'css',
+        logo: 'css3',
         name: 'CSS3',
         url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
       },
 
       {
-        logo: 'js',
+        logo: 'javascript',
         name: 'Javascript',
         url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
       }
     ]
   }
 ]
+
+export default experience

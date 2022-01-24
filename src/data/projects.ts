@@ -2,7 +2,7 @@ import { Project } from 'data/dataTypes'
 
 export const projects: Project[] = [
   {
-    logo: 'better-sg',
+    logo: 'bettersg',
     title: 'Race Relations in Singapore',
     organisation: '',
     period: 'May 2020 – Present',
@@ -12,7 +12,7 @@ export const projects: Project[] = [
     stack: [
       { logo: 'nextjs', name: 'Next.js', url: 'http://nextjs.org' },
       {
-        logo: 'ts',
+        logo: 'typescript',
         name: 'Typescript',
         url: 'https://www.typescriptlang.org'
       },
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     stack: [{ logo: 'figma', name: 'Figma', url: 'https://www.figma.com' }]
   },
   {
-    logo: 'hack&roll2021',
+    logo: 'hack&roll21',
     title: 'Hack&Roll',
     organisation: 'NUS Hackers',
     period: 'Jan 2021',
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    logo: 'eusoff-smc',
+    logo: 'eusoff-eagle',
     title: 'Publicity Head',
     organisation: 'Eusoff Hall',
     period: 'May 2021 – Present',
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    logo: 'eusoff',
+    logo: 'eusoff-crest',
     title: 'Eusoff Hackers',
     organisation: 'Eusoff Hall',
     period: 'Aug 2020 – May 2021',

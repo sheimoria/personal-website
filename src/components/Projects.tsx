@@ -4,12 +4,15 @@ import router from 'next/router'
 import { projects } from 'data/projects'
 import { Tech } from 'data/dataTypes'
 import { Fade } from 'react-awesome-reveal'
+import { useTheme } from 'next-themes'
 
 const Projects = () => {
+  const { theme, setTheme } = useTheme()
+
   return (
     <section className="flex flex-col justify-center min-h-screen gap-8 py-8 sm:py-12 snap-always snap-center">
-      <Fade cascade duration={500}>
-        <h3 id="tech-projects">Projects</h3>
+      <Fade cascade duration={800}>
+        <h4 id="tech-projects">Projects</h4>
         {projects.map((project, index) => (
           <article
             key={index}
@@ -18,12 +21,13 @@ const Projects = () => {
             <div className="flex items-center justify-between gap-6">
               <div className="relative w-full h-8">
                 <Image
-                  src={`/${project.logo}.svg`}
+                  src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                    project.logo
+                  }.svg`}
                   alt={project.logo}
                   layout="fill"
                   objectFit="contain"
                   objectPosition="left"
-                  className="filter-gray dark:filter-white"
                 />
               </div>
               {project.url && (
@@ -33,7 +37,7 @@ const Projects = () => {
               )}
             </div>
             <div>
-              <h5>{project.title}</h5>
+              <h6>{project.title}</h6>
               <h6>{project.organisation}</h6>
               <p>{project.period}</p>
             </div>
@@ -47,12 +51,13 @@ const Projects = () => {
                     className="relative w-6 h-6 cursor-pointer"
                   >
                     <Image
-                      src={`/${tech.logo}.svg`}
+                      src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                        tech.logo
+                      }.svg`}
                       alt={tech.name}
                       layout="fill"
                       objectFit="contain"
                       objectPosition="left"
-                      className="filter-gray dark:filter-white"
                     />
                   </div>
                 ))}

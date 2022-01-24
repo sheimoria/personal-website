@@ -1,6 +1,6 @@
 export type Tech = { logo: string; name: string; url: string }
 
-export type WorkExperience = {
+export type Experience = {
   logo: string
   title: string
   organisation: string

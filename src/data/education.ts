@@ -17,7 +17,7 @@ export const education: Degree[] = [
           'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers; achieved highest level certification (Artemis).',
         stack: [
           {
-            logo: 'ts',
+            logo: 'typescript',
             name: 'Typescript',
             url: 'https://www.typescriptlang.org'
           },
