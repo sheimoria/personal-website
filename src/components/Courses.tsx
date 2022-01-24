@@ -34,7 +34,7 @@ const Courses = ({ courses }: { courses: Course[] }) => {
             )}
           </div>
           <div>
-            <h6 className="flex flex-col items-start gap-2 sm:items-center sm:flex-row">
+            <h6 className="flex flex-col items-start gap-2">
               <span className="px-2 py-1 text-xs tracking-wide text-white bg-gray-800 rounded dark:text-gray-800 dark:bg-gray-100">
                 {course.code}
               </span>{' '}
@@ -44,22 +44,27 @@ const Courses = ({ courses }: { courses: Course[] }) => {
           </div>
           <p>{course.description}</p>
           {course.stack && (
-            <div className="flex flex-wrap gap-8">
+            <div className="flex flex-wrap gap-6">
               {course.stack.map((tech, index) => (
                 <div
                   key={index}
-                  className="relative w-6 h-6 cursor-pointer"
-                  onClick={() => router.push(tech.url)}
+                  className="flex items-center flex-none gap-3 font-mono text-sm"
                 >
-                  <Image
-                    src={`${theme == 'dark' ? '/dark' : '/light'}/${
-                      tech.logo
-                    }.svg`}
-                    alt={tech.name}
-                    layout="fill"
-                    objectFit="contain"
-                    objectPosition="left"
-                  />
+                  <div
+                    className="relative flex-none w-5 h-5 cursor-pointer"
+                    onClick={() => router.push(tech.url)}
+                  >
+                    <Image
+                      src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                        tech.logo
+                      }.svg`}
+                      alt={tech.name}
+                      layout="fill"
+                      objectFit="contain"
+                      objectPosition="left"
+                    />
+                  </div>
+                  {tech.name}
                 </div>
               ))}
             </div>

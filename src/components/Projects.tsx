@@ -47,18 +47,23 @@ const Projects = () => {
                 {project.stack.map((tech: Tech, index: number) => (
                   <div
                     key={index}
-                    onClick={() => router.push(tech.url)}
-                    className="relative w-6 h-6 cursor-pointer"
+                    className="flex items-center flex-none gap-3 font-mono text-sm"
                   >
-                    <Image
-                      src={`${theme == 'dark' ? '/dark' : '/light'}/${
-                        tech.logo
-                      }.svg`}
-                      alt={tech.name}
-                      layout="fill"
-                      objectFit="contain"
-                      objectPosition="left"
-                    />
+                    <div
+                      className="relative flex-none w-5 h-5 cursor-pointer"
+                      onClick={() => router.push(tech.url)}
+                    >
+                      <Image
+                        src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                          tech.logo
+                        }.svg`}
+                        alt={tech.name}
+                        layout="fill"
+                        objectFit="contain"
+                        objectPosition="left"
+                      />
+                    </div>
+                    {tech.name}
                   </div>
                 ))}
               </div>

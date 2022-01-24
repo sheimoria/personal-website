@@ -78,7 +78,7 @@ export const projects: Project[] = [
     stack: [
       {
         logo: 'python',
-        name: 'python-telegram-bot',
+        name: 'Python',
         url: 'https://github.com/python-telegram-bot/python-telegram-bot'
       },
       {
