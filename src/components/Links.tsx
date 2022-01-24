@@ -5,11 +5,7 @@ import { Fade } from 'react-awesome-reveal'
 const Links = () => {
   return (
     <aside className="fixed flex-col hidden gap-8 bottom-12 sm:flex">
-      <Fade cascade direction="up" duration={800}>
-        <MailIcon
-          onClick={() => router.push('mailto: shem.maleriado@gmail.com')}
-          className="w-6 h-6 text-gray-800 transition-colors cursor-pointer hover:text-gray-900 dark:text-gray-200 dark:hover:text-gray-100"
-        />
+      <Fade cascade direction="up">
         <svg
           onClick={() =>
             router.push('https://www.linkedin.com/in/shemmaleriado/')
