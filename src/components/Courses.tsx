@@ -46,14 +46,14 @@ const Courses = ({ courses }: { courses: Course[] }) => {
           {course.stack && (
             <div className="flex flex-wrap gap-6">
               {course.stack.map((tech, index) => (
-                <div
+                <a
                   key={index}
-                  className="flex items-center flex-none gap-3 font-mono text-sm"
+                  href={tech.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center flex-none gap-3 font-mono"
                 >
-                  <div
-                    className="relative flex-none w-5 h-5 cursor-pointer"
-                    onClick={() => router.push(tech.url)}
-                  >
+                  <div className="relative flex-none w-6 h-6">
                     <Image
                       src={`${theme == 'dark' ? '/dark' : '/light'}/${
                         tech.logo
@@ -65,7 +65,7 @@ const Courses = ({ courses }: { courses: Course[] }) => {
                     />
                   </div>
                   {tech.name}
-                </div>
+                </a>
               ))}
             </div>
           )}

@@ -36,14 +36,8 @@
   p {
     @apply text-gray-800 dark:text-gray-100;
   }
-  .filter-gray {
-    filter: brightness(0) saturate(100%) invert(9%) sepia(40%) saturate(801%)
-      hue-rotate(175deg) brightness(94%) contrast(84%);
-  }
-
-  .filter-white {
-    filter: brightness(0) saturate(100%) invert(99%) sepia(17%) saturate(432%)
-      hue-rotate(177deg) brightness(99%) contrast(94%);
+  a {
+    @apply text-gray-800 transition-colors hover:text-gray-900 dark:text-gray-100 dark:hover:text-white;
   }
 }
 

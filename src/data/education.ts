@@ -14,7 +14,7 @@ export const education: Degree[] = [
         period: 'May – Aug 2021',
         url: 'https://givehub.vercel.app',
         description:
-          'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers; achieved highest level certification (Artemis).',
+          'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers; achieved the highest level certification (Artemis).',
         stack: [
           {
             logo: 'typescript',
@@ -51,7 +51,7 @@ export const education: Degree[] = [
         period: 'July 2021',
         url: 'https://enterprise.nus.edu.sg/education-programmes/summer-programme/',
         description:
-          'Student ambassador for 12 students from Southeast Asia and China; collaborated with a team of 5 to deliver a product pitch to judges.'
+          'Orientated 12 students from Southeast Asia and China as a student ambassador; collaborated with a team of 5 to deliver a product pitch to a panel of judges.'
       }
     ]
   },
