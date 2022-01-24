@@ -7,7 +7,7 @@ import Links from 'components/Links'
 import Email from 'components/Email'
 import Experience from 'components/Experience'
 import Education from 'components/Education'
-import Projects from 'components/Projects'
+import Extracurriculars from 'components/Extracurriculars'
 
 const Home: NextPage = () => {
   return (
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <Intro />
         <Education />
         <Experience />
-        <Projects />
+        <Extracurriculars />
       </main>
       <Links />
       <Email />

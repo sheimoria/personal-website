@@ -3,7 +3,7 @@ import { Experience } from 'data/dataTypes'
 const experience: Experience[] = [
   {
     logo: 'carfix',
-    title: 'Frontend Developer Intern',
+    position: 'Frontend Developer Intern',
     organisation: 'Carfix',
     period: 'May 2021 – Present',
     url: 'https://staging.carfixsg.co',
@@ -38,7 +38,7 @@ const experience: Experience[] = [
   },
   {
     logo: 'grab',
-    title: 'Marketing Assistant',
+    position: 'Marketing Assistant',
     organisation: 'Grab',
     period: 'Jan – Jul 2020',
     description: [

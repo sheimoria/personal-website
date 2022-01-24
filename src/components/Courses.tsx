@@ -42,7 +42,13 @@ const Courses = ({ courses }: { courses: Course[] }) => {
             </h6>
             <p>{course.period}</p>
           </div>
-          <p>{course.description}</p>
+          <ul className="flex flex-col gap-2 ml-4 list-disc list-outside">
+            {course.description.map((point, index) => (
+              <li key={index} className="text-gray-800 dark:text-gray-100">
+                {point}
+              </li>
+            ))}
+          </ul>
           {course.stack && (
             <div className="flex flex-wrap gap-6">
               {course.stack.map((tech, index) => (

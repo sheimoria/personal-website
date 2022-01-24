@@ -1,6 +1,6 @@
 import { Degree } from 'data/dataTypes'
 
-export const education: Degree[] = [
+const education: Degree[] = [
   {
     logo: 'nus',
     name: 'National University of Singapore',
@@ -12,9 +12,10 @@ export const education: Degree[] = [
         code: 'CP2106',
         name: 'Independent Software Development Project (Orbital)',
         period: 'May – Aug 2021',
-        url: 'https://givehub.vercel.app',
-        description:
-          'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers; achieved the highest level certification (Artemis).',
+        url: 'https://drive.google.com/file/d/1aGGiJyPwKbFIPt89lJFg3RLGicotU8C8/view?usp=sharing',
+        description: [
+          'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers; achieved the highest level certification (Artemis).'
+        ],
         stack: [
           {
             logo: 'typescript',
@@ -50,8 +51,11 @@ export const education: Degree[] = [
         name: 'Summer Programme in Entrepreneurship',
         period: 'July 2021',
         url: 'https://enterprise.nus.edu.sg/education-programmes/summer-programme/',
-        description:
-          'Orientated 12 students from Southeast Asia and China as a student ambassador; collaborated with a team of 5 to deliver a product pitch to a panel of judges.'
+        description: [
+          'Orientated a group of 12 students from South-east Asia and China as a student ambassador',
+          "Delivered a product pitch with 4 teammates to a panel of judges from Singapore's startup scene",
+          'Received the Temasek Foundation-NUS STEP Entrepreneurship Initiative 2021 scholarship, which is awarded to high-potential individuals with a passion for entrepreneurship'
+        ]
       }
     ]
   },
@@ -62,3 +66,5 @@ export const education: Degree[] = [
     period: 'Jan 2016 – Oct 2017'
   }
 ]
+
+export default education

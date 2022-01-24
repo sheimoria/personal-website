@@ -2,16 +2,15 @@ import { ExternalLinkIcon } from '@heroicons/react/solid'
 import experience from 'data/experience'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
-import router from 'next/router'
 import { Fade } from 'react-awesome-reveal'
 
-const WorkExperience = () => {
+const Experience = () => {
   const { theme, setTheme } = useTheme()
 
   return (
     <section className="flex flex-col justify-center min-h-screen gap-8 py-8 snap-always snap-center">
       <Fade cascade duration={800}>
-        <h4>Work Experience</h4>
+        <h4 id="experience">Experience</h4>
         {experience.map((experience, index) => (
           <article
             key={index}
@@ -36,7 +35,7 @@ const WorkExperience = () => {
               )}
             </div>
             <div>
-              <h6>{experience.title}</h6>
+              <h6>{experience.position}</h6>
               <p>{experience.period}</p>
             </div>
             <ul className="flex flex-col gap-2 ml-4 list-disc list-outside">
@@ -79,4 +78,4 @@ const WorkExperience = () => {
   )
 }
 
-export default WorkExperience
+export default Experience

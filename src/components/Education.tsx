@@ -1,4 +1,4 @@
-import { education } from 'data/education'
+import education from 'data/education'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import { Fade } from 'react-awesome-reveal'
@@ -11,7 +11,7 @@ const Education = () => {
   return (
     <section className="flex flex-col justify-center min-h-screen gap-8 py-8 snap-always snap-center">
       <Fade cascade duration={800}>
-        <h4 id="about-me">Education</h4>
+        <h4 id="education">Education</h4>
         <div className="flex flex-col gap-8">
           <div className="relative flex-none w-12 h-12">
             <Image

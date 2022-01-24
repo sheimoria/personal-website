@@ -27,28 +27,28 @@ const Header = () => {
         <nav className="hidden sm:gap-8 sm:items-center sm:flex">
           <Fade cascade direction="down" duration={400}>
             <a
-              href="#about"
+              href="#education"
               className="text-gray-800 transition-colors hover:text-gray-900 dark:text-gray-100 dark:hover:text-white"
             >
-              About Me
+              Education
             </a>
             <a
-              href="#tech-projects"
+              href="#experience"
               className="text-gray-800 transition-colors hover:text-gray-900 dark:text-gray-100 dark:hover:text-white"
             >
-              Tech Projects
+              Experience
             </a>
             <a
-              /* href="#designs" */
+              href="#extracurriculars"
               className="text-gray-800 transition-colors hover:text-gray-900 dark:text-gray-100 dark:hover:text-white"
             >
-              Designs
+              Extracurriculars
             </a>
             <a
-              /* href="#artworks" */
-              className="text-gray-800 transition-colors hover:text-gray-900 dark:text-gray-100 dark:hover:text-white"
+              /* href="#artdesign" */
+              className="text-gray-800 transition-colors opacity-50 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white"
             >
-              Artworks
+              Art&Design
             </a>
             <a
               href="https://drive.google.com/file/d/1qwqvHZsvSc15-skze3NwWs26OiqZc4tM/view?usp=sharing"
