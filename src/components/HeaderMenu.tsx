@@ -10,7 +10,7 @@ const HeaderMenu = () => {
       {({ open }) => (
         <>
           <Menu.Button>
-            <MenuIcon className="link-icon" />
+            <MenuIcon className="w-6 h-6 text-gray-800 transition-colors cursor-pointer dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100" />
           </Menu.Button>
           <Transition
             show={open}
@@ -24,27 +24,54 @@ const HeaderMenu = () => {
           >
             <Menu.Items
               static
-              className="absolute right-0 z-10 flex flex-col py-3 truncate origin-top-right bg-teal-900 rounded shadow-md focus:outline-none"
+              className="absolute right-0 z-10 flex flex-col py-3 truncate origin-top-right bg-white rounded shadow-md dark:bg-gray-900 focus:outline-none"
             >
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#stints">
-                    <a className="menu-item">Stints</a>
+                  <Link href="#about-me">
+                    <a className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
+                      About Me
+                    </a>
                   </Link>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#studies">
-                    <a className="menu-item">Studies</a>
+                  <Link href="#tech-projects">
+                    <a className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
+                      Tech Projects
+                    </a>
                   </Link>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#sidework">
-                    <a className="menu-item">Sidework</a>
+                  <Link href="#designs">
+                    <a className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
+                      Designs
+                    </a>
                   </Link>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <Link href="#designs">
+                    <a className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
+                      Artworks
+                    </a>
+                  </Link>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <a
+                    href="https://drive.google.com/file/d/1qwqvHZsvSc15-skze3NwWs26OiqZc4tM/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white"
+                  >
+                    Resume
+                  </a>
                 )}
               </Menu.Item>
             </Menu.Items>

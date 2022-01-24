@@ -1,20 +1,33 @@
+import Image from 'next/image'
 import { Fade } from 'react-awesome-reveal'
-require('intersection-observer')
 
 const Intro = () => {
   return (
-    <Fade>
-      <h4>Hi there!</h4>
-      <p>
-        I&apos;m Shem, a computer science sophomore who enjoys making fast and
-        beautiful things on the web. Besides technology, I also have a knack for
-        design; check out how I&apos;ve been exploring these two interests of
-        mine below! But of course, there&apos;s much to learn and do, so please
-        do connect with me if there&apos;s an opportunity for us to discover
-        something together!
-      </p>
-      <p>Have a great day ✌️</p>
-    </Fade>
+    <section className="flex flex-col-reverse items-center justify-center min-h-screen gap-8 sm:flex-row snap-always snap-center">
+      <Fade duration={500}>
+        <div className="flex flex-col gap-8">
+          <h3>Hi there!</h3>
+          <p>
+            I&apos;m Shem, a computer science sophomore who enjoys making fast
+            and beautiful things on the web. Besides technology, I also have a
+            knack for design; check out how I&apos;ve been exploring these two
+            interests of mine below! But of course, there&apos;s much to learn
+            and do, so please do connect with me if there&apos;s an opportunity
+            for us to discover something together!
+          </p>
+          <p>Have a great day ✌️</p>
+        </div>
+        <div className="relative flex-none w-40 h-40 overflow-hidden rounded-full">
+          <Image
+            src="/profile.png"
+            alt="Profile"
+            layout="fill"
+            objectFit="contain"
+            objectPosition="left"
+          />
+        </div>
+      </Fade>
+    </section>
   )
 }
 
