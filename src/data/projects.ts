@@ -10,12 +10,12 @@ export const projects: Project[] = [
     description:
       'Initiated a website to showcase a growing spreadsheet of educational resources on Singapore’s race relations, which attracted collaboration with a civic tech collective.',
     stack: [
-      { logo: 'nextjs', name: 'Next.js', url: 'http://nextjs.org' },
       {
         logo: 'typescript',
         name: 'Typescript',
         url: 'https://www.typescriptlang.org'
       },
+      { logo: 'nextjs', name: 'Next.js', url: 'http://nextjs.org' },
       {
         logo: 'sheets',
         name: 'Sheets API',
