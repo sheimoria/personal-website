@@ -9,7 +9,7 @@ const WorkExperience = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <section className="flex flex-col justify-center min-h-screen gap-8 py-8 snap-always snap-center sm:py-12">
+    <section className="flex flex-col justify-center min-h-screen gap-8 py-8 snap-always snap-center">
       <Fade cascade duration={800}>
         <h4>Work Experience</h4>
         {experience.map((experience, index) => (
@@ -36,7 +36,7 @@ const WorkExperience = () => {
               )}
             </div>
             <div>
-              <h6>{experience.title}</h6>
+              <h6>{experience.title}x</h6>
               <p>{experience.period}</p>
             </div>
             <ul className="flex flex-col gap-2 ml-4 list-disc list-outside">

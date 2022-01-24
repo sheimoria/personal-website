@@ -9,7 +9,7 @@ const Education = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <section className="flex flex-col justify-center min-h-screen gap-8 py-8 snap-always snap-center sm:py-12">
+    <section className="flex flex-col justify-center min-h-screen gap-8 py-8 snap-always snap-center">
       <Fade cascade duration={800}>
         <h4 id="about-me">Education</h4>
         <div className="flex flex-col gap-8 ">
