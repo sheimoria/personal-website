@@ -9,8 +9,8 @@ const HeaderMenu = () => {
     <Menu as="div" className="relative sm:hidden">
       {({ open }) => (
         <>
-          <Menu.Button>
-            <MenuIcon className="w-6 h-6 text-gray-800 transition-colors cursor-pointer dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100" />
+          <Menu.Button className="p-3 text-gray-800 transition-colors bg-gray-100 rounded hover:text-gray-900 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100 dark:hover:text-white">
+            <MenuIcon className="w-6 h-6" />
           </Menu.Button>
           <Transition
             show={open}
@@ -24,42 +24,40 @@ const HeaderMenu = () => {
           >
             <Menu.Items
               static
-              className="absolute right-0 z-10 flex flex-col py-3 truncate origin-top-right bg-white rounded shadow-md dark:bg-gray-900 focus:outline-none"
+              className="absolute right-0 z-10 flex flex-col py-3 mt-3 truncate origin-top-right bg-white rounded shadow dark:bg-gray-900 focus:outline-none"
             >
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#about-me">
+                  <Link href="#education">
                     <a className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
-                      About Me
+                      Education
                     </a>
                   </Link>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#tech-projects">
+                  <Link href="#experience">
                     <a className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
-                      Tech Projects
+                      Experience
                     </a>
                   </Link>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#designs">
+                  <Link href="#extracurriculars">
                     <a className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
-                      Designs
+                      Extracurriculars
                     </a>
                   </Link>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#designs">
-                    <a className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
-                      Artworks
-                    </a>
-                  </Link>
+                  <a className="px-6 py-3 text-gray-800 transition-colors opacity-50 cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
+                    Art&Design
+                  </a>
                 )}
               </Menu.Item>
               <Menu.Item>

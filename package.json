@@ -21,13 +21,10 @@
     "next-themes": "latest",
     "react": "latest",
     "react-awesome-reveal": "latest",
-    "react-dom": "latest",
-    "react-headroom": "latest",
-    "react-hook-inview": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",
-    "@types/react-headroom": "latest",
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
@@ -36,5 +33,5 @@
     "tailwindcss": "latest",
     "typescript": "latest"
   },
-  "packageManager": "yarn@latest"
+  "packageManager": "yarn@3.0.2"
 }

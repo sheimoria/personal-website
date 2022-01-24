@@ -2,8 +2,11 @@ import { ExternalLinkIcon } from '@heroicons/react/solid'
 import { Course } from 'data/dataTypes'
 import Image from 'next/image'
 import router from 'next/router'
+import { useTheme } from 'next-themes'
 
 const Courses = ({ courses }: { courses: Course[] }) => {
+  const { theme, setTheme } = useTheme()
+
   return (
     <>
       <h4>Courses</h4>
@@ -15,12 +18,13 @@ const Courses = ({ courses }: { courses: Course[] }) => {
           <div className="flex items-center justify-between gap-8">
             <div className="relative w-full h-8">
               <Image
-                src={`/${course.logo}.svg`}
+                src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                  course.logo
+                }.svg`}
                 alt={course.logo}
                 layout="fill"
                 objectFit="contain"
                 objectPosition="left"
-                className="filter-gray dark:filter-white"
               />
             </div>
             {course.url && (
@@ -29,33 +33,45 @@ const Courses = ({ courses }: { courses: Course[] }) => {
               </a>
             )}
           </div>
-          <div className="flex flex-col gap-2">
-            <h5 className="flex items-center gap-2">
+          <div>
+            <h6 className="flex flex-col items-start gap-2">
               <span className="px-2 py-1 text-xs tracking-wide text-white bg-gray-800 rounded dark:text-gray-800 dark:bg-gray-100">
                 {course.code}
               </span>{' '}
               {course.name}
-            </h5>
-            <h6>{course.period}</h6>
+            </h6>
+            <p>{course.period}</p>
           </div>
-          <p>{course.description}</p>
+          <ul className="flex flex-col gap-2 ml-4 list-disc list-outside">
+            {course.description.map((point, index) => (
+              <li key={index} className="text-gray-800 dark:text-gray-100">
+                {point}
+              </li>
+            ))}
+          </ul>
           {course.stack && (
-            <div className="flex flex-wrap gap-8">
+            <div className="flex flex-wrap gap-6">
               {course.stack.map((tech, index) => (
-                <div
+                <a
                   key={index}
-                  className="relative w-6 h-6 cursor-pointer"
-                  onClick={() => router.push(tech.url)}
+                  href={tech.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center flex-none gap-3 font-mono"
                 >
-                  <Image
-                    src={`/${tech.logo}.svg`}
-                    alt={tech.name}
-                    layout="fill"
-                    objectFit="contain"
-                    objectPosition="left"
-                    className="filter-gray dark:filter-white"
-                  />
-                </div>
+                  <div className="relative flex-none w-6 h-6">
+                    <Image
+                      src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                        tech.logo
+                      }.svg`}
+                      alt={tech.name}
+                      layout="fill"
+                      objectFit="contain"
+                      objectPosition="left"
+                    />
+                  </div>
+                  {tech.name}
+                </a>
               ))}
             </div>
           )}

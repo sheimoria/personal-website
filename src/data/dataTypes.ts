@@ -1,15 +1,5 @@
 export type Tech = { logo: string; name: string; url: string }
 
-export type WorkExperience = {
-  logo: string
-  title: string
-  organisation: string
-  period: string
-  url?: string
-  description: string[]
-  stack: Tech[]
-}
-
 export type Degree = {
   logo: string
   name: string
@@ -24,16 +14,27 @@ export type Course = {
   name: string
   period: string
   url?: string
-  description: string
+  description: string[]
   stack?: Tech[]
 }
 
-export type Project = {
+export type Experience = {
   logo: string
-  title: string
+  position: string
   organisation: string
   period: string
   url?: string
-  description: string
+  description: string[]
   stack: Tech[]
+}
+
+export type Extracurricular = {
+  logo: string
+  position?: string
+  event: string
+  organisation: string
+  period: string
+  url?: string
+  description: string[]
+  stack?: Tech[]
 }
