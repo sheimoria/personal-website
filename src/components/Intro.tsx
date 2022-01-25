@@ -3,7 +3,7 @@ import { Fade } from 'react-awesome-reveal'
 
 const Intro = () => {
   return (
-    <section className="flex flex-col-reverse items-center justify-center min-h-screen gap-8 sm:flex-row snap-always snap-center">
+    <section className="flex flex-col-reverse items-center justify-center min-h-screen gap-8 sm:flex-row">
       <Fade duration={800}>
         <div className="flex flex-col gap-8">
           <h4>Hi there!</h4>

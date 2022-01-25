@@ -9,13 +9,15 @@ const Education = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <section className="flex flex-col justify-center min-h-screen gap-8 py-8 snap-always snap-center">
+    <section className="flex flex-col justify-center min-h-screen gap-8">
       <Fade cascade duration={800}>
         <h4 id="education">Education</h4>
         <div className="flex flex-col gap-8">
           <div className="relative flex-none w-12 h-12">
             <Image
-              src={`${theme == 'dark' ? '/dark' : '/light'}/${degree.logo}.svg`}
+              src={`${theme == 'light' ? '/light' : '/dark'}/${
+                degree.logo
+              }.svg`}
               alt={degree.logo}
               layout="fill"
               objectFit="contain"

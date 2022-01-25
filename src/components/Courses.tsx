@@ -18,7 +18,7 @@ const Courses = ({ courses }: { courses: Course[] }) => {
           <div className="flex items-center justify-between gap-8">
             <div className="relative w-full h-8">
               <Image
-                src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                src={`${theme == 'light' ? '/light' : '/dark'}/${
                   course.logo
                 }.svg`}
                 alt={course.logo}
@@ -61,7 +61,7 @@ const Courses = ({ courses }: { courses: Course[] }) => {
                 >
                   <div className="relative flex-none w-6 h-6">
                     <Image
-                      src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                      src={`${theme == 'light' ? '/light' : '/dark'}/${
                         tech.logo
                       }.svg`}
                       alt={tech.name}

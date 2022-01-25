@@ -8,7 +8,7 @@ const Experience = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <section className="flex flex-col justify-center min-h-screen gap-8 py-8 snap-always snap-center">
+    <section className="flex flex-col justify-center min-h-screen gap-8">
       <Fade cascade duration={800}>
         <h4 id="experience">Experience</h4>
         {experience.map((experience, index) => (
@@ -19,7 +19,7 @@ const Experience = () => {
             <div className="flex items-center justify-between gap-8">
               <div className="relative w-full h-8">
                 <Image
-                  src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                  src={`${theme == 'light' ? '/light' : '/dark'}/${
                     experience.logo
                   }.svg`}
                   alt={experience.logo}
@@ -57,7 +57,7 @@ const Experience = () => {
                   >
                     <div className="relative flex-none w-6 h-6">
                       <Image
-                        src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                        src={`${theme == 'light' ? '/light' : '/dark'}/${
                           tech.logo
                         }.svg`}
                         alt={tech.name}

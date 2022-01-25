@@ -9,7 +9,7 @@ const Extracurriculars = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <section className="flex flex-col justify-center min-h-screen gap-8 py-8 snap-always snap-center">
+    <section className="flex flex-col justify-center min-h-screen gap-8">
       <Fade cascade duration={800}>
         <h4 id="extracurriculars">Extracurriculars</h4>
         {extracurriculars.map((extracurricular, index) => (
@@ -20,7 +20,7 @@ const Extracurriculars = () => {
             <div className="flex items-center justify-between gap-6">
               <div className="relative w-full h-8">
                 <Image
-                  src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                  src={`${theme == 'light' ? '/light' : '/dark'}/${
                     extracurricular.logo
                   }.svg`}
                   alt={extracurricular.logo}
@@ -61,7 +61,7 @@ const Extracurriculars = () => {
                   >
                     <div className="relative flex-none w-6 h-6">
                       <Image
-                        src={`${theme == 'dark' ? '/dark' : '/light'}/${
+                        src={`${theme == 'light' ? '/light' : '/dark'}/${
                           tech.logo
                         }.svg`}
                         alt={tech.name}
