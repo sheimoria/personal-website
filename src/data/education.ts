@@ -14,7 +14,9 @@ const education: Degree[] = [
         period: 'May – Aug 2021',
         url: 'https://drive.google.com/file/d/1aGGiJyPwKbFIPt89lJFg3RLGicotU8C8/view?usp=sharing',
         description: [
-          'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers; achieved the highest level certification (Artemis).'
+          'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers',
+          'Attained the highest level of achievement (Artemis) for showing strong evidence of software engineering, testing and documentation',
+          'Mentored by Paypal Software Development Manager and President’s Volunteerism & Philanthropy Award Winner Mr Laurence Franslay'
         ],
         stack: [
           {
