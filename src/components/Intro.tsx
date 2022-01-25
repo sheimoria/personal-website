@@ -9,7 +9,7 @@ const Intro = () => {
           <h4>Hi there!</h4>
           <p>
             I&apos;m Shem, a computer science sophomore who enjoys making fast,
-            beautiful and useful solutions. Besides technology, I also have a
+            beautiful and useful solutions. Besides development, I also have a
             knack for design; check out how I&apos;ve been exploring these two
             interests of mine below! But of course, there&apos;s much more to
             learn and do, so do connect with me if there&apos;s an opportunity
