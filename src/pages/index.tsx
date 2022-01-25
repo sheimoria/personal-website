@@ -7,6 +7,7 @@ import Email from 'components/Email'
 import Experience from 'components/Experience'
 import Education from 'components/Education'
 import Extracurriculars from 'components/Extracurriculars'
+import Footer from 'components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -15,12 +16,13 @@ const Home: NextPage = () => {
         <title>Shem Maleriado</title>
       </Head>
       <Header />
-      <main className="flex flex-col max-w-xl max-h-screen gap-12 mx-auto lg:max-w-3xl">
+      <main className="flex flex-col max-w-xl gap-12 mx-auto lg:max-w-3xl">
         <Intro />
         <Education />
         <Experience />
         <Extracurriculars />
       </main>
+      <Footer />
       <Links />
       <Email />
     </>
