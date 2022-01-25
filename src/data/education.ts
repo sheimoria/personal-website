@@ -26,15 +26,16 @@ const education: Degree[] = [
           },
           { logo: 'reactjs', name: 'React.js', url: 'https://reactjs.org' },
           {
+            logo: 'tailwindcss',
+            name: 'Tailwind CSS',
+            url: 'https://tailwindcss.com'
+          },
+          {
             logo: 'graphql',
             name: 'GraphQL',
             url: 'https://graphql.org'
           },
-          {
-            logo: 'tailwindcss',
-            name: 'TailwindCSS',
-            url: 'https://tailwindcss.com'
-          },
+
           {
             logo: 'nodejs',
             name: 'Node.js',
@@ -44,6 +45,11 @@ const education: Degree[] = [
             logo: 'postgresql',
             name: 'PostgreSQL',
             url: 'https://www.postgresql.org'
+          },
+          {
+            logo: 'docker',
+            name: 'Docker',
+            url: 'https://www.docker.com/'
           }
         ]
       },
@@ -54,9 +60,9 @@ const education: Degree[] = [
         period: 'July 2021',
         url: 'https://enterprise.nus.edu.sg/education-programmes/summer-programme/',
         description: [
-          'Orientated a group of 12 students from South-east Asia and China as a student ambassador',
+          'Orientated a group of 12 students from Southeast Asia and China as a student ambassador',
           "Delivered a product pitch with 4 teammates to a panel of judges from Singapore's startup scene",
-          'Received the Temasek Foundation-NUS STEP Entrepreneurship Initiative 2021 scholarship, which is awarded to high-potential individuals with a passion for entrepreneurship'
+          'Awarded the Temasek Foundation-NUS STEP Entrepreneurship Initiative 2021 scholarship, which is given to high-potential individuals with a passion for entrepreneurship'
         ]
       }
     ]
