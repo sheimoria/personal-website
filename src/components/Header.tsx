@@ -31,7 +31,7 @@ const Header = () => {
         </div>
         {/* Desktop */}
         <nav className="hidden lg:gap-8 lg:items-center lg:flex">
-          <Fade cascade direction="down" duration={400}>
+          <Fade cascade direction="down" duration={600}>
             <a href="#education">Education</a>
             <a href="#experience">Experience</a>
             <a href="#extracurriculars">Extracurriculars</a>
@@ -70,7 +70,7 @@ const Header = () => {
         </nav>
       </Fade>
       <div className="flex items-center flex-none gap-6 lg:hidden">
-        <Fade cascade direction="down" duration={500}>
+        <Fade cascade direction="down" duration={600}>
           <MailIcon
             onClick={() => router.push('mailto: shem.maleriado@gmail.com')}
             className="w-6 h-6 text-gray-800 transition-colors cursor-pointer hover:text-gray-900 dark:text-gray-200 dark:hover:text-gray-100"

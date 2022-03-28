@@ -67,7 +67,7 @@ function Card({ size, imagePosition, data }: CardProps) {
       <div className="flex flex-col gap-6">
         <div className="flex flex-col lg:flex-row gap-6 justify-between lg:items-center">
           {/* Logo */}
-          <Fade direction="up" duration={800}>
+          <Fade direction="up" duration={800} triggerOnce>
             <div className="relative h-8 w-36">
               <Image
                 src={`${theme == 'light' ? '/light' : '/dark'}/${
@@ -83,13 +83,13 @@ function Card({ size, imagePosition, data }: CardProps) {
           {/* Links */}
           {data.links && (
             <div className="flex gap-4 items-center flex-wrap">
-              <Fade cascade direction="up" duration={400}>
+              <Fade cascade direction="up" duration={600} triggerOnce>
                 {data.links.map((link) => linkToIcon(link))}
               </Fade>
             </div>
           )}
         </div>
-        <Fade cascade duration={800}>
+        <Fade duration={800} triggerOnce>
           {/* Headings */}
           <div className="flex flex-col gap-1">
             <h6>
@@ -107,7 +107,7 @@ function Card({ size, imagePosition, data }: CardProps) {
         </Fade>
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-4">
-          <Fade cascade direction="down" duration={400}>
+          <Fade cascade direction="down" duration={600} triggerOnce>
             {data.stack?.map((tech) => (
               <button
                 key={tech.name}
@@ -135,34 +135,22 @@ function Card({ size, imagePosition, data }: CardProps) {
 
 function linkToIcon(link: Link) {
   return (
-    <button className="btn-hollow group">
+    <button
+      onClick={() => window.open(link.url, '_blank')}
+      className="btn-hollow group"
+    >
       {link.type == 'Repo' ? (
         <GitHubIcon url={link.url} />
       ) : link.type == 'Docs' || link.type == 'Proposal' ? (
-        <DocumentTextIcon
-          onClick={() => window.open(link.url, '_blank')}
-          className="w-5 h-5 group-hover:-rotate-12 transition-transform"
-        />
+        <DocumentTextIcon className="w-5 h-5 group-hover:-rotate-12 transition-transform" />
       ) : link.type == 'Poster' ? (
-        <PhotographIcon
-          onClick={() => window.open(link.url, '_blank')}
-          className="w-5 h-5 group-hover:-rotate-12 transition-transform"
-        />
+        <PhotographIcon className="w-5 h-5 group-hover:-rotate-12 transition-transform" />
       ) : link.type == 'Recommendation' ? (
-        <DocumentTextIcon
-          onClick={() => window.open(link.url, '_blank')}
-          className="w-5 h-5 group-hover:-rotate-12 transition-transform"
-        />
+        <DocumentTextIcon className="w-5 h-5 group-hover:-rotate-12 transition-transform" />
       ) : link.type == 'Video' ? (
-        <PlayIcon
-          onClick={() => window.open(link.url, '_blank')}
-          className="w-5 h-5 group-hover:-rotate-12 transition-transform"
-        />
+        <PlayIcon className="w-5 h-5 group-hover:-rotate-12 transition-transform" />
       ) : (
-        <ExternalLinkIcon
-          onClick={() => window.open(link.url, '_blank')}
-          className="w-5 h-5 group-hover:-rotate-12 transition-transform"
-        />
+        <ExternalLinkIcon className="w-5 h-5 group-hover:-rotate-12 transition-transform" />
       )}
       {link.type}
     </button>

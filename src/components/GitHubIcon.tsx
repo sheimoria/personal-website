@@ -1,9 +1,7 @@
-import router from 'next/router'
-
 function GitHubIcon({ url }: { url: string }) {
   return (
     <svg
-      onClick={() => router.push(url)}
+      onClick={() => window.open(url, '_blank')}
       fill="currentColor"
       viewBox="0 0 16 16"
       className="w-6 h-6 text-gray-800 transition hover:rotate-12 cursor-pointer hover:text-gray-900 dark:text-gray-200 dark:hover:text-gray-100"
