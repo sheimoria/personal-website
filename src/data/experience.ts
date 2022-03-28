@@ -44,7 +44,7 @@ const experience: Data[] = [
     ]
   },
   {
-    image: 'grab.png',
+    image: 'grab-poster.png',
     url: 'https://www.grab.com/sg/driver/transport/rentals/',
     logo: 'grab',
     heading: 'Web Designer',
