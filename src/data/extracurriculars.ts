@@ -1,40 +1,61 @@
-import { Extracurricular } from 'data/dataTypes'
+import Data from 'util/data'
 
-const extracurriculars: Extracurricular[] = [
+const extracurriculars: Data[] = [
   {
+    image: 'sbs-transit-hackathon-deck.png',
+    url: 'https://www.linkedin.com/feed/update/urn:li:activity:6900362240634290176/',
     logo: 'sbs-transit',
-    position: 'Winner',
-    event: 'Hackathon',
-    organisation: 'SBS Transit',
-    period: 'Sep – Nov 2021',
-    url: 'https://drive.google.com/file/d/1pQRowKxDTs-RqOpqCLEVn9CkrOCNLnvh/view?usp=sharing',
-    description: [
+    links: [
+      {
+        type: 'Proposal',
+        url: 'https://drive.google.com/file/d/1pQRowKxDTs-RqOpqCLEVn9CkrOCNLnvh/view?usp=sharing'
+      }
+    ],
+    heading: 'Winner',
+    heading2: 'Hackathon',
+    heading3: 'SBS Transit',
+    subheading: 'Sep – Nov 2021',
+    points: [
       'Collaborated with 3 teammates to propose a revamp of the SBS Transit app into an industry-leading, accessibility-focused commuting app for the handicapped and disabled; awarded as one of the top three teams'
     ],
     stack: [{ logo: 'figma', name: 'Figma', url: 'https://www.figma.com' }]
   },
   {
-    logo: 'eusoff-eagle',
-    position: 'Publicity Head',
-    event: 'Sports Management Committee',
-    organisation: 'Eusoff Hall',
-    period: 'May 2021 – Present',
+    image: 'eusoff-sports-management-committee-publicity-heads.png',
     url: 'https://www.instagram.com/eusoff_smc/?hl=en',
-    description: [
-      "Leading a team of 12 to design various sporting merchandise and social media content in support of the hall's 17 sports and 300 over athletes"
+    logo: 'eusoff-eagle',
+    heading: 'Publicity Head',
+    heading2: 'Sports Management Committee',
+    heading3: 'Eusoff Hall',
+    subheading: 'May 2021 – Present',
+    points: [
+      "Led a team of 12 to design various sporting merchandise and social media content in support of the hall's 17 sports and 300 over athletes"
     ],
     stack: [
-      { logo: 'photoshop', name: 'Photoshop', url: '' },
-      { logo: 'illustrator', name: 'Illustrator', url: '' }
+      {
+        logo: 'photoshop',
+        name: 'Photoshop',
+        url: 'https://www.adobe.com/sg/products/photoshop.htmlillust'
+      },
+      {
+        logo: 'illustrator',
+        name: 'Illustrator',
+        url: 'https://www.adobe.com/sg/products/illustrator.html'
+      }
     ]
   },
   {
-    logo: 'bettersg',
-    event: 'Race Relations in Singapore',
-    organisation: 'better.sg',
-    period: 'May 2020 – Present',
+    image: 'race-relations-sg.png',
     url: 'https://racerelationssg.vercel.app',
-    description: [
+    logo: 'bettersg',
+    links: [
+      { type: 'Repo', url: 'https://github.com/sheimoria/race-relations-sg' }
+    ],
+    heading: 'Web Developer',
+    heading2: 'Race Relations in Singapore',
+    heading3: 'better.sg',
+    subheading: 'May 2020 – Present',
+    points: [
       "Partnered with an activist to initiate a website that showcases a growing public repository of over 100 educational resources on Singapore's race relations; attracted support from civic tech collective better.sg"
     ],
     stack: [
@@ -52,12 +73,14 @@ const extracurriculars: Extracurricular[] = [
     ]
   },
   {
+    image: 'eusoff-cca-bot.png',
+    url: 'https://t.me/Eusoff_CCA_Bot',
     logo: 'eusoff-crest',
-    position: 'Member',
-    event: 'Eusoff Hackers',
-    organisation: 'Eusoff Hall',
-    period: 'Aug 2020 – May 2021',
-    description: [
+    heading: 'Software Engineer',
+    heading2: 'Eusoff Hackers',
+    heading3: 'Eusoff Hall',
+    subheading: 'Aug 2020 – May 2021',
+    points: [
       'Collaborated with 3 teammates to build a Telegram bot to track CCA attendance for 40 CCAs and over 400 residents'
     ],
     stack: [
@@ -74,12 +97,14 @@ const extracurriculars: Extracurricular[] = [
     ]
   },
   {
-    logo: 'hack&roll21',
-    event: 'Hack&Roll',
-    organisation: 'NUS Hackers',
-    period: 'Jan 2021',
+    image: 'lookout.png',
     url: 'https://devpost.com/software/lookout-lgzdkx',
-    description: [
+    logo: 'hack&roll21',
+    heading: 'Participant',
+    heading2: 'Hack&Roll',
+    heading3: 'NUS Hackers',
+    subheading: 'Jan 2021',
+    points: [
       'Developed a web app with 2 teammates to notify users via Telegram whenever keywords appeared during online class'
     ],
     stack: [
@@ -97,23 +122,27 @@ const extracurriculars: Extracurricular[] = [
     ]
   },
   {
-    logo: 'aws',
-    event: 'Build On Singapore Hackathon',
-    organisation: 'Amazon Web Services',
-    period: 'Jul – Aug 2020',
+    image: 'gighub.png',
     url: 'https://drive.google.com/file/d/15a1b7f8DNrlyfPLNYkHG8JZFKWyD5n89/view?usp=sharing',
-    description: [
+    logo: 'aws',
+    heading: 'Finalist',
+    heading2: 'Build On Hackathon',
+    heading3: 'Amazon Web Services',
+    subheading: 'Jul – Aug 2020',
+
+    points: [
       'Collaborated with 3 teammates to propose an app to connect workers affected by COVID-19 to contract work; emerged as finalists'
     ],
     stack: [{ logo: 'figma', name: 'Figma', url: 'https://www.figma.com' }]
   },
   {
+    image: 'grab-guide.png',
     logo: 'imda',
-    position: 'Volunteer',
-    event: 'Digital Media Clinics for Merdeka Generation',
-    organisation: 'Infocomm and Media Development Authority',
-    period: 'Feb – Apr 2020',
-    description: [
+    heading: 'Volunteer',
+    heading2: 'Digital Media Clinics for Merdeka Generation',
+    heading3: 'Infocomm and Media Development Authority',
+    subheading: 'Feb – Apr 2020',
+    points: [
       'Conducted weekly workshops at community centres to teach senior citizens how to use the Grab app for their daily needs; each session catered to over 20 participants',
       'Cooperated with other volunteers to organise logistics and optimise the workshop curriculum',
       'Briefed Grab driver-partners on available COVID-19 aid initiatives by Grab and the government'

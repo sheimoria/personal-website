@@ -6,10 +6,10 @@ import { MenuIcon } from '@heroicons/react/outline'
 
 const HeaderMenu = () => {
   return (
-    <Menu as="div" className="relative sm:hidden">
+    <Menu as="div" className="relative lg:hidden">
       {({ open }) => (
         <>
-          <Menu.Button className="p-3 text-gray-800 transition-colors bg-gray-100 rounded hover:text-gray-900 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100 dark:hover:text-white">
+          <Menu.Button className="p-3 text-gray-800 transition-colors bg-gray-100 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100 dark:hover:text-white">
             <MenuIcon className="w-6 h-6" />
           </Menu.Button>
           <Transition
@@ -24,7 +24,7 @@ const HeaderMenu = () => {
           >
             <Menu.Items
               static
-              className="absolute right-0 z-10 flex flex-col py-3 mt-3 truncate origin-top-right bg-white rounded shadow dark:bg-gray-900 focus:outline-none"
+              className="absolute right-0 z-10 flex flex-col py-3 mt-3 truncate origin-top-right bg-gray-100 rounded-lg shadow-md dark:bg-gray-900 focus:outline-none"
             >
               <Menu.Item>
                 {({ active }) => (

@@ -5,7 +5,14 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        sans: 'neue-haas-grotesk-text'
+      },
+      aspectRatio: {
+        '4/3': '4 / 3'
+      }
+    }
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),

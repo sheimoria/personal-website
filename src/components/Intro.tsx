@@ -7,7 +7,7 @@ const Intro = () => {
       <Fade duration={800}>
         <div className="flex flex-col gap-8">
           <h4>Hi there!</h4>
-          <p>
+          <p className="px-8 sm:px-0">
             I&apos;m Shem, a computer science sophomore who enjoys making fast,
             beautiful and useful solutions. Besides development, I also have a
             knack for design; check out how I&apos;ve been exploring these two
@@ -15,7 +15,7 @@ const Intro = () => {
             learn and do, so do connect with me if there&apos;s an opportunity
             for us to discover something together!
           </p>
-          <p>Have a great day ✌️</p>
+          <p className="px-8 sm:px-0">Have a great day ✌️</p>
         </div>
         <div className="relative flex-none w-40 h-40 overflow-hidden rounded-full">
           <Image

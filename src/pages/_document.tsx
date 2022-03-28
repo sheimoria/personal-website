@@ -5,7 +5,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" type="image/svg" href="/light/logo.svg" />
+          <link rel="icon" href="/light/logo.svg" />
+          <link rel="stylesheet" href="https://use.typekit.net/klq3ikn.css" />
         </Head>
         <body>
           <Main />

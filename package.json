@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "latest",
     "@heroicons/react": "latest",
+    "@notionhq/client": "^1.0.4",
     "@tailwindcss/aspect-ratio": "latest",
     "@tailwindcss/forms": "latest",
     "@tailwindcss/line-clamp": "latest",
