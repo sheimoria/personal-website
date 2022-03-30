@@ -9,7 +9,7 @@ const HeaderMenu = () => {
     <Menu as="div" className="relative lg:hidden">
       {({ open }) => (
         <>
-          <Menu.Button className="p-3 text-gray-800 transition-colors bg-gray-100 rounded-lg hover:text-gray-900 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100 dark:hover:text-white">
+          <Menu.Button className="p-3 text-gray-800 transition-colors bg-gray-200 rounded-lg hover:text-gray-900 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100 dark:hover:text-white">
             <MenuIcon className="w-6 h-6" />
           </Menu.Button>
           <Transition
@@ -28,18 +28,18 @@ const HeaderMenu = () => {
             >
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#education">
+                  <Link href="#experience">
                     <a className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
-                      Education
+                      Experience
                     </a>
                   </Link>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <Link href="#experience">
+                  <Link href="#education">
                     <a className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
-                      Experience
+                      Education
                     </a>
                   </Link>
                 )}

@@ -1,6 +1,6 @@
 {
-  "name": "shemmaleriado.com",
-  "version": "0.1.0",
+  "name": "shemmaleriado.me",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,7 +12,6 @@
   "dependencies": {
     "@headlessui/react": "latest",
     "@heroicons/react": "latest",
-    "@notionhq/client": "^1.0.4",
     "@tailwindcss/aspect-ratio": "latest",
     "@tailwindcss/forms": "latest",
     "@tailwindcss/line-clamp": "latest",
@@ -25,6 +24,7 @@
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@types/node": "latest",
     "@types/react": "latest",
     "autoprefixer": "latest",
     "eslint": "latest",

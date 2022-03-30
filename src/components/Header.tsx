@@ -29,46 +29,47 @@ const Header = () => {
             objectPosition="left"
           />
         </div>
-        {/* Desktop */}
-        <nav className="hidden lg:gap-8 lg:items-center lg:flex">
-          <Fade cascade direction="down" duration={600}>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#extracurriculars">Extracurriculars</a>
-            <a
-              href="https://shemmaleriado.myportfolio.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Art&Design
-            </a>
-            <a
-              href="https://drive.google.com/file/d/1qwqvHZsvSc15-skze3NwWs26OiqZc4tM/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-              className="px-6 py-4 text-gray-800 transition-colors bg-gray-200 rounded-lg hover:text-gray-900 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100 dark:hover:text-white"
-            >
-              Resume
-            </a>
-            <button className="p-3 text-gray-800 transition-colors bg-gray-200 rounded-lg hover:text-gray-900 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100 dark:hover:text-white">
-              {theme ? (
-                theme == 'light' ? (
-                  <MoonIcon
-                    onClick={() => setTheme('dark')}
-                    className="w-6 h-6"
-                  />
-                ) : (
-                  <SunIcon
-                    onClick={() => setTheme('light')}
-                    className="w-6 h-6"
-                  />
-                )
-              ) : null}
-            </button>
-          </Fade>
-          {/* Mobile */}
-        </nav>
       </Fade>
+      {/* Desktop */}
+      <nav className="hidden lg:gap-8 lg:items-center lg:flex">
+        <Fade cascade direction="down" duration={400}>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#extracurriculars">Extracurriculars</a>
+          <a
+            href="https://shemmaleriado.myportfolio.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Art&Design
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1qwqvHZsvSc15-skze3NwWs26OiqZc4tM/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            className="px-6 py-4 text-gray-800 transition-colors bg-gray-200 rounded-lg hover:text-gray-900 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100 dark:hover:text-white"
+          >
+            Resume
+          </a>
+          <button className="p-3 text-gray-800 transition-colors bg-gray-200 rounded-lg hover:text-gray-900 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-100 dark:hover:text-white">
+            {theme ? (
+              theme == 'light' ? (
+                <MoonIcon
+                  onClick={() => setTheme('dark')}
+                  className="w-6 h-6"
+                />
+              ) : (
+                <SunIcon
+                  onClick={() => setTheme('light')}
+                  className="w-6 h-6"
+                />
+              )
+            ) : null}
+          </button>
+        </Fade>
+        {/* Mobile */}
+      </nav>
+
       <div className="flex items-center flex-none gap-6 lg:hidden">
         <Fade cascade direction="down" duration={600}>
           <MailIcon

@@ -89,7 +89,7 @@ function Card({ size, imagePosition, data }: CardProps) {
             </div>
           )}
         </div>
-        <Fade duration={800} triggerOnce>
+        <Fade cascade duration={800} triggerOnce>
           {/* Headings */}
           <div className="flex flex-col gap-1">
             <h6>

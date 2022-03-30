@@ -5,7 +5,7 @@ import LinkedInIcon from './LinkedInIcon'
 function Links() {
   return (
     <aside className="fixed flex-col hidden gap-8 bottom-12 sm:flex">
-      <Fade cascade direction="up">
+      <Fade cascade direction="up" duration={800}>
         <GitHubIcon url="https://github.com/sheimoria" />
         <LinkedInIcon />
       </Fade>
