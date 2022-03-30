@@ -123,8 +123,13 @@ const extracurriculars: Data[] = [
   },
   {
     image: 'gighub.png',
-    url: 'https://drive.google.com/file/d/15a1b7f8DNrlyfPLNYkHG8JZFKWyD5n89/view?usp=sharing',
     logo: 'aws',
+    links: [
+      {
+        type: 'Proposal',
+        url: 'https://drive.google.com/file/d/15a1b7f8DNrlyfPLNYkHG8JZFKWyD5n89/view?usp=sharing'
+      }
+    ],
     heading: 'Finalist',
     heading2: 'Build On Hackathon',
     heading3: 'Amazon Web Services',

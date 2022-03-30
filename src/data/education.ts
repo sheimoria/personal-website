@@ -12,7 +12,7 @@ const education: Education = {
   logo: 'nus',
   name: 'National University of Singapore',
   degree: 'Bachelor of Computing in Computer Science',
-  period: 'Aug 2020 – Present',
+  period: 'Aug 2020 – May 2024',
   courses: [
     {
       image: 'givehub.png',
@@ -39,9 +39,9 @@ const education: Education = {
       heading2: 'Independent Software Development Project (Orbital)',
       subheading: 'May – Aug 2021',
       points: [
-        'Developed a social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers',
+        'Co-developed a one-stop social platform for Singaporeans to discover volunteer opportunities and for charities to manage volunteers',
         'Attained the highest level of achievement (Artemis) for showing strong evidence of software engineering, testing and documentation',
-        'Mentored by Paypal Software Development Manager and President’s Volunteerism & Philanthropy Award Winner Mr Laurence Franslay'
+        'Mentored by TikTok tech lead manager and President’s Volunteerism & Philanthropy Award winner Mr Laurence Franslay'
       ],
       stack: [
         {
@@ -85,7 +85,7 @@ const education: Education = {
       heading2: 'Summer Programme in Entrepreneurship',
       subheading: 'July 2021',
       points: [
-        "Delivered a product pitch with 4 teammates to a panel of judges from Singapore's startup scene",
+        "Pitched a product with 4 teammates to a panel of judges from Singapore's startup scene",
         'Orientated a group of 12 students from Southeast Asia and China as a student ambassador',
         'Awarded the Temasek Foundation-NUS STEP Entrepreneurship Initiative scholarship, which is given to high-potential individuals with a passion for entrepreneurship'
       ]

@@ -15,9 +15,8 @@ const experience: Data[] = [
     heading2: 'Carfix',
     subheading: 'May 2021 – Present',
     points: [
-      'Created the web platform in collaboration with two other developers; tripled revenue since launch and secured government funding of SGD 50,000',
-      'Developed the frontend and its user interface from scratch; served over 100 requests since launch',
-      'Designed the company logo and design system for marketing'
+      'Co-developed a web application within a 4-man engineering team, which has attained SGD 50,000 in government funding, tripled revenue and served over 100 requests since launch in Nov 2021',
+      'Designed the user interface, user flow and company logo and brand'
     ],
     stack: [
       {
@@ -51,9 +50,9 @@ const experience: Data[] = [
     heading2: 'Grab',
     subheading: 'Jan – Jul 2020',
     points: [
-      'Programmed interactive landing pages for acquisition campaigns as a member of the marketing team',
-      'Designed marketing collaterals such as brochures and electronic direct mail; sent to over 1000 driver-partners',
-      'Produced creative, promotional content for social media channels; increased incoming customer enquiries by over 3 times'
+      'Developed landing pages for acquisition campaigns as part of the marketing team',
+      'Designed marketing collaterals such as brochures and electronic direct mail, which were sent to over 1000 driver-partners',
+      'Produced creative and promotional content for social media channels, which tripled incoming customer enquiries'
     ],
     stack: [
       {
