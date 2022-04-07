@@ -31,7 +31,7 @@ const Header = () => {
         </div>
       </Fade>
       {/* Desktop */}
-      <nav className="hidden lg:gap-8 lg:items-center lg:flex">
+      <nav className="hidden md:gap-8 md:items-center md:flex">
         <Fade cascade direction="down" duration={400}>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
@@ -69,7 +69,7 @@ const Header = () => {
         </Fade>
         {/* Mobile */}
       </nav>
-      <div className="flex items-center flex-none gap-6 lg:hidden">
+      <div className="flex items-center flex-none gap-4 sm:gap-6 md:hidden">
         <Fade cascade direction="down" duration={600}>
           <MailIcon
             onClick={() =>

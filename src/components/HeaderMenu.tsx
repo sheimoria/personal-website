@@ -55,7 +55,12 @@ const HeaderMenu = () => {
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <a className="px-6 py-3 text-gray-800 transition-colors opacity-50 cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white">
+                  <a
+                    href="https://shemmaleriado.myportfolio.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white"
+                  >
                     Art&Design
                   </a>
                 )}
@@ -63,7 +68,7 @@ const HeaderMenu = () => {
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href="https://drive.google.com/file/d/1qwqvHZsvSc15-skze3NwWs26OiqZc4tM/view?usp=sharing"
+                    href="https://docs.google.com/document/d/1KkM6z7mh1MqOmxxxwrmVgwo7zXU7S9Xvez6RMNLnaJY/edit?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                     className="px-6 py-3 text-gray-800 transition-colors cursor-pointer dark:text-gray-100 hover:text-gray-900 dark:hover:text-white"
