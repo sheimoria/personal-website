@@ -17,15 +17,22 @@ const Intro = () => {
             <br />
             <br />
             As an aspiring visual artist <i>turned</i> aspiring software
-            engineer, I enjoy using my knack for both design and technology to
-            build innovative, responsive and elegant solutions. Check out how
-            I&apos;ve been doing so below!
+            engineer, I enjoy leveraging on design and technology to build
+            innovative, optimised and elegant solutions. Check out how I&apos;ve
+            been doing so below!
             <br />
             <br />
-            But of course, there&apos;s much to discover and learn, so please do
-            connect with me if there&apos;s an opportunity for us to develop
-            something together! Here are some technologies which I&apos;m
-            currently tinkering with:
+            But of course, there&apos;s much to learn and discover, so do{' '}
+            <a
+              href="https://www.linkedin.com/in/shemmaleriado/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              connect with me
+            </a>{' '}
+            if there&apos;s an opportunity for us to develop something together!
+            Here are some technologies which I&apos;m currently tinkering with:
           </p>
           <div className="flex flex-wrap gap-4 xl:w-4/5 px-8 sm:px-0">
             <Fade cascade direction="down" duration={600} triggerOnce>
@@ -51,7 +58,7 @@ const Intro = () => {
           </div>
           <p className="px-8 sm:px-0">Have a great day ✌️</p>
         </div>
-        <div className="relative flex-none w-52 h-52 overflow-hidden rounded-full">
+        <div className="relative flex-none w-48 h-48 overflow-hidden rounded-full">
           <Image
             src="/profile.png"
             alt="Profile"

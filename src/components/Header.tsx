@@ -67,8 +67,8 @@ const Header = () => {
             ) : null}
           </button>
         </Fade>
-        {/* Mobile */}
       </nav>
+      {/* Mobile */}
       <div className="flex items-center flex-none gap-4 sm:gap-6 md:hidden">
         <Fade cascade direction="down" duration={600}>
           <MailIcon
