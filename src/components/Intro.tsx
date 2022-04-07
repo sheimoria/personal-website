@@ -7,7 +7,7 @@ const Intro = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <section className="flex flex-col-reverse items-center lg:justify-center gap-8 lg:flex-row">
+    <section className="flex flex-col-reverse items-center justify-center min-h-screen gap-12 lg:flex-row pt-32 sm:pt-0">
       <Fade duration={800}>
         <div className="flex flex-col gap-6">
           <h4>Hi there!</h4>

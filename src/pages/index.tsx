@@ -20,7 +20,7 @@ function Home() {
         <title>Shem Maleriado</title>
       </Head>
       <Header />
-      <main className="flex flex-col max-w-md gap-12 md:max-w-xl mx-auto lg:max-w-3xl xl:max-w-5xl mt-32">
+      <main className="flex flex-col max-w-md gap-12 md:max-w-xl mx-auto lg:max-w-3xl xl:max-w-5xl">
         <Intro />
         <Cards size="large" heading="Experience" data={experience} />
         <h4 id="education">Education</h4>
