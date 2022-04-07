@@ -1,4 +1,5 @@
 import Link from './link'
+import Tech from './tech'
 
 type Data = {
   image?: string
@@ -10,7 +11,7 @@ type Data = {
   heading3?: string
   subheading?: string
   points: string[]
-  stack?: { logo: string; name: string; url: string }[]
+  stack?: Tech[]
 }
 
 export default Data
